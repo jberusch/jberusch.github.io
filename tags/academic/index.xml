@@ -6,23 +6,15 @@
     <description>Recent content in Academic on Joe Berusch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 20 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jberusch.github.io/tags/academic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Massachusetts Juvenile Justice Sentencing Policy</title>
-      <link>https://jberusch.github.io/posts/ib_ee/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jberusch.github.io/posts/ib_ee/</guid>
-      <description>Add text of EE</description>
-    </item>
-    
-    <item>
       <title>chirc</title>
       <link>https://jberusch.github.io/posts/chirc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://jberusch.github.io/posts/chirc/</guid>
       <description>implemented fully-functional IRC (Internet Relay Chat) Server, usinc C.
@@ -33,13 +25,22 @@ Description: Your implementation must be compliant enough with the official IRC 
     <item>
       <title>shell</title>
       <link>https://jberusch.github.io/posts/shell/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://jberusch.github.io/posts/shell/</guid>
       <description>created basic shell, using C.
 Class: CMSC 15400 &amp;ndash; Introduction to Computer Systems
 Objectives:
  To write a complete program from scratch. We only provide a small code skeleton. To learn about shell functionalities. You will familiarize yourself with the Linux programming environment and gain exposure to the necessary functionality in shells. To learn about process interaction. You will learn about how a process is started, how a parent process waits for the child to terminate, how processes communicate via pipes, and so on.</description>
+    </item>
+    
+    <item>
+      <title>Massachusetts Juvenile Justice Sentencing Policy</title>
+      <link>https://jberusch.github.io/posts/ib_ee/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/ib_ee/</guid>
+      <description>Add text of EE</description>
     </item>
     
   </channel>
