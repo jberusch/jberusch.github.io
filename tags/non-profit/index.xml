@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Non Profit on Joe Berusch</title>
+    <link>https://jberusch.github.io/tags/non-profit/</link>
+    <description>Recent content in Non Profit on Joe Berusch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Dec 2018 13:56:12 -0500</lastBuildDate>
+    
+	<atom:link href="https://jberusch.github.io/tags/non-profit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GARY 1.0</title>
+      <link>https://jberusch.github.io/posts/gary10/</link>
+      <pubDate>Sat, 22 Dec 2018 13:56:12 -0500</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/gary10/</guid>
+      <description>ideated &amp;amp; implemented prototype data viz web app for student data, currently in use at educational non-profit in South Side Chicago.
+Partner Organization: Gary Comer Youth Center
+GARY 1.0 can be found here</description>
+    </item>
+    
+  </channel>
+</rss>

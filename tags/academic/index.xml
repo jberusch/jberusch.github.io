@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academic on Joe Berusch</title>
+    <link>https://jberusch.github.io/tags/academic/</link>
+    <description>Recent content in Academic on Joe Berusch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Jan 2019 12:35:11 -0500</lastBuildDate>
+    
+	<atom:link href="https://jberusch.github.io/tags/academic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>chirc</title>
+      <link>https://jberusch.github.io/posts/chirc/</link>
+      <pubDate>Sat, 26 Jan 2019 12:35:11 -0500</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/chirc/</guid>
+      <description>implemented fully-functional IRC (Internet Relay Chat) Server, usinc C.
+Class: CMSC 23300 &amp;ndash; Networks &amp;amp; Distributed Systems
+Description: Your implementation must be compliant enough with the official IRC specification for other IRC clients (not programmed by you) to work with your server. Although we will provide some scaffolding, most tasks will require you to consult the official IRC specification, or to experiment with existing IRC servers. Thus, this project will allow you to develop not just your network programming skills, but also your ability to read and interpret a real network protocol.</description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://jberusch.github.io/posts/shell/</link>
+      <pubDate>Fri, 30 Nov 2018 12:35:11 -0500</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/shell/</guid>
+      <description>created basic shell, using C.
+Class: CMSC 15400 &amp;ndash; Introduction to Computer Systems
+Objectives:
+ To write a complete program from scratch. We only provide a small code skeleton. To learn about shell functionalities. You will familiarize yourself with the Linux programming environment and gain exposure to the necessary functionality in shells. To learn about process interaction. You will learn about how a process is started, how a parent process waits for the child to terminate, how processes communicate via pipes, and so on.</description>
+    </item>
+    
+    <item>
+      <title>Massachusetts Juvenile Justice Sentencing Policy</title>
+      <link>https://jberusch.github.io/posts/ib_ee/</link>
+      <pubDate>Wed, 08 Feb 2017 20:18:53 -0500</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/ib_ee/</guid>
+      <description>Add text of EE</description>
+    </item>
+    
+  </channel>
+</rss>
