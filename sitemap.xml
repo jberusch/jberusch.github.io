@@ -43,10 +43,6 @@
   </url>
   
   <url>
-    <loc>https://jberusch.github.io/about/</loc>
-  </url>
-  
-  <url>
     <loc>https://jberusch.github.io/test/</loc>
   </url>
   
@@ -125,6 +121,10 @@
     <loc>https://jberusch.github.io/tags/web/</loc>
     <lastmod>2017-01-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/about/</loc>
   </url>
   
 </urlset>

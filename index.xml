@@ -84,6 +84,17 @@ Objectives:
     
     <item>
       <title></title>
+      <link>https://jberusch.github.io/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/test/</guid>
+      <description>Hi, I&amp;rsquo;m Joe! I&amp;rsquo;m a studen
+ podcast recommendations 
+ The Ezra Klein Show  Anil Dash on the biases of tech Bryan Stevenson Peter Beinart on the conscience of a liberal, American Jew Jaron Lanier&amp;rsquo;s case for deleting social media right now (I did!)  This American Life  Rom-Com Harper High School  How I Built This  Slack &amp;amp; Flickr: Stewart Butterfield Lyft: John Zimmer Instagram: Kevin Systrom &amp;amp; Mike Krieger  Slow Burn, Season 1  Every episode.</description>
+    </item>
+    
+    <item>
+      <title>about me</title>
       <link>https://jberusch.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -93,17 +104,6 @@ studies computer science
 from Cleveland Heights &amp;amp; Shaker Heights, Ohio
  topics that fascinate &amp;amp; excite me 
  serious  startups computer networks &amp;amp;&amp;amp; architecture ML &amp;amp;&amp;amp; AI &amp;amp;&amp;amp; the singularity urban design &amp;amp; housing segregation juvenile sentencing policy  less serious  musical theater things built by hand spikeball on the beach live recordings of rock performances (Springsteen, Eagles, Queen) meeting new people     places i worked &amp;ndash; roles i had</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jberusch.github.io/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jberusch.github.io/test/</guid>
-      <description>Hi, I&amp;rsquo;m Joe! I&amp;rsquo;m a studen
- podcast recommendations 
- The Ezra Klein Show  Anil Dash on the biases of tech Bryan Stevenson Peter Beinart on the conscience of a liberal, American Jew Jaron Lanier&amp;rsquo;s case for deleting social media right now (I did!)  This American Life  Rom-Com Harper High School  How I Built This  Slack &amp;amp; Flickr: Stewart Butterfield Lyft: John Zimmer Instagram: Kevin Systrom &amp;amp; Mike Krieger  Slow Burn, Season 1  Every episode.</description>
     </item>
     
   </channel>
