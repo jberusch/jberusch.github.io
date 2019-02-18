@@ -13,13 +13,18 @@
   </url>
   
   <url>
-    <loc>https://jberusch.github.io/posts/chirc/</loc>
-    <lastmod>2017-01-20T00:00:00+00:00</lastmod>
+    <loc>https://jberusch.github.io/posts/cup_of_joe/</loc>
+    <lastmod>2017-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jberusch.github.io/posts/cup_of_joe/</loc>
-    <lastmod>2017-01-18T00:00:00+00:00</lastmod>
+    <loc>https://jberusch.github.io/posts/jar/</loc>
+    <lastmod>2017-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/posts/chirc/</loc>
+    <lastmod>2017-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -43,6 +48,11 @@
   </url>
   
   <url>
+    <loc>https://jberusch.github.io/posts/game_of_thrones/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jberusch.github.io/test/</loc>
   </url>
   
@@ -53,13 +63,31 @@
   </url>
   
   <url>
+    <loc>https://jberusch.github.io/tags/board-games/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://jberusch.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/tags/computer-vision/</loc>
+    <lastmod>2017-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jberusch.github.io/tags/criminal-justice/</loc>
     <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/tags/game-of-thrones/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -83,19 +111,25 @@
   
   <url>
     <loc>https://jberusch.github.io/tags/passion-project/</loc>
-    <lastmod>2017-01-18T00:00:00+00:00</lastmod>
+    <lastmod>2017-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jberusch.github.io/tags/podcast/</loc>
-    <lastmod>2017-01-18T00:00:00+00:00</lastmod>
+    <lastmod>2017-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jberusch.github.io/tags/politics/</loc>
     <lastmod>2017-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/tags/robotics/</loc>
+    <lastmod>2017-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

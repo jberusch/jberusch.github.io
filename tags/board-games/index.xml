@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Board Games on Joe Berusch</title>
+    <link>https://jberusch.github.io/tags/board-games/</link>
+    <description>Recent content in Board Games on Joe Berusch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jberusch.github.io/tags/board-games/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>**Game of Game of Thrones</title>
+      <link>https://jberusch.github.io/posts/game_of_thrones/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/game_of_thrones/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

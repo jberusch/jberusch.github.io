@@ -12,6 +12,26 @@
     
     
     <item>
+      <title>**Cup of Joe</title>
+      <link>https://jberusch.github.io/posts/cup_of_joe/</link>
+      <pubDate>Sun, 22 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/cup_of_joe/</guid>
+      <description>&amp;ndash; in progress &amp;ndash;
+A podcast for and by students fueled by intellectual excitement.</description>
+    </item>
+    
+    <item>
+      <title>*JAR v1</title>
+      <link>https://jberusch.github.io/posts/jar/</link>
+      <pubDate>Sun, 22 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/jar/</guid>
+      <description>&amp;ndash; in progress &amp;ndash;
+Autonomous rover, traverses College campus, recognizing sidewalk conditions (rain, snow, sleet, etc.) and responding accordingly.</description>
+    </item>
+    
+    <item>
       <title>chirc</title>
       <link>https://jberusch.github.io/posts/chirc/</link>
       <pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate>
@@ -20,15 +40,6 @@
       <description>implemented fully-functional IRC (Internet Relay Chat) Server, usinc C.
 Class: CMSC 23300 &amp;ndash; Networks &amp;amp; Distributed Systems
 Description: Your implementation must be compliant enough with the official IRC specification for other IRC clients (not programmed by you) to work with your server. Although we will provide some scaffolding, most tasks will require you to consult the official IRC specification, or to experiment with existing IRC servers. Thus, this project will allow you to develop not just your network programming skills, but also your ability to read and interpret a real network protocol.</description>
-    </item>
-    
-    <item>
-      <title>Cup of Joe</title>
-      <link>https://jberusch.github.io/posts/cup_of_joe/</link>
-      <pubDate>Wed, 18 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://jberusch.github.io/posts/cup_of_joe/</guid>
-      <description>A podcast for and by students fueled by intellectual excitement.</description>
     </item>
     
     <item>
@@ -70,6 +81,15 @@ Objectives:
       
       <guid>https://jberusch.github.io/posts/chapel_talk/</guid>
       <description>Get full text of chapel talk.</description>
+    </item>
+    
+    <item>
+      <title>**Game of Game of Thrones</title>
+      <link>https://jberusch.github.io/posts/game_of_thrones/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/game_of_thrones/</guid>
+      <description></description>
     </item>
     
   </channel>

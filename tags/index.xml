@@ -21,11 +21,38 @@
     </item>
     
     <item>
+      <title>Board Games</title>
+      <link>https://jberusch.github.io/tags/board-games/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/tags/board-games/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer Vision</title>
+      <link>https://jberusch.github.io/tags/computer-vision/</link>
+      <pubDate>Sun, 22 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/tags/computer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Criminal Justice</title>
       <link>https://jberusch.github.io/tags/criminal-justice/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://jberusch.github.io/tags/criminal-justice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Game of Thrones</title>
+      <link>https://jberusch.github.io/tags/game-of-thrones/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/tags/game-of-thrones/</guid>
       <description></description>
     </item>
     
@@ -50,7 +77,7 @@
     <item>
       <title>Passion Project</title>
       <link>https://jberusch.github.io/tags/passion-project/</link>
-      <pubDate>Wed, 18 Jan 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 22 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://jberusch.github.io/tags/passion-project/</guid>
       <description></description>
@@ -59,7 +86,7 @@
     <item>
       <title>Podcast</title>
       <link>https://jberusch.github.io/tags/podcast/</link>
-      <pubDate>Wed, 18 Jan 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 22 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://jberusch.github.io/tags/podcast/</guid>
       <description></description>
@@ -71,6 +98,15 @@
       <pubDate>Sat, 07 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://jberusch.github.io/tags/politics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robotics</title>
+      <link>https://jberusch.github.io/tags/robotics/</link>
+      <pubDate>Sun, 22 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/tags/robotics/</guid>
       <description></description>
     </item>
     
