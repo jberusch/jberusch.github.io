@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>chirc</title>
+      <title>chIRC</title>
       <link>https://jberusch.github.io/posts/chirc/</link>
       <pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate>
       
@@ -20,6 +20,17 @@
       <description>implemented fully-functional IRC (Internet Relay Chat) Server, usinc C.
 Class: CMSC 23300 &amp;ndash; Networks &amp;amp; Distributed Systems
 Description: Your implementation must be compliant enough with the official IRC specification for other IRC clients (not programmed by you) to work with your server. Although we will provide some scaffolding, most tasks will require you to consult the official IRC specification, or to experiment with existing IRC servers. Thus, this project will allow you to develop not just your network programming skills, but also your ability to read and interpret a real network protocol.</description>
+    </item>
+    
+    <item>
+      <title>chiTCP</title>
+      <link>https://jberusch.github.io/posts/chitcp/</link>
+      <pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/chitcp/</guid>
+      <description>implemented Transmission Control Protocol (TCP), usinc C.
+Class: CMSC 23300 &amp;ndash; Networks &amp;amp; Distributed Systems
+Description: chiTCP is a programming assignment where students have to implement the TCP protocol. It provides a framework for students to bypass the operating system’s TCP stack and, instead, use a sandboxed and testable TCP stack that runs in userspace (instead of kernelspace). All the details of how TCP interacts with the other layers of the protocol stack (including how packets are handed down to the network layer, and how data is passed up to the application layer) are already implemented for the students, who can then focus on implementing the TCP protocol itself.</description>
     </item>
     
     <item>

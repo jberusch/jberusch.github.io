@@ -28,6 +28,11 @@
   </url>
   
   <url>
+    <loc>https://jberusch.github.io/posts/chitcp/</loc>
+    <lastmod>2017-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jberusch.github.io/posts/gary10/</loc>
     <lastmod>2017-01-15T00:00:00+00:00</lastmod>
   </url>
@@ -35,6 +40,11 @@
   <url>
     <loc>https://jberusch.github.io/posts/shell/</loc>
     <lastmod>2017-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/posts/fuse/</loc>
+    <lastmod>2017-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -50,6 +60,10 @@
   <url>
     <loc>https://jberusch.github.io/posts/game_of_thrones/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/about/</loc>
   </url>
   
   <url>
@@ -134,8 +148,20 @@
   </url>
   
   <url>
+    <loc>https://jberusch.github.io/tags/social-media/</loc>
+    <lastmod>2017-01-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://jberusch.github.io/tags/speech/</loc>
     <lastmod>2017-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/tags/startup/</loc>
+    <lastmod>2017-01-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -155,10 +181,6 @@
     <loc>https://jberusch.github.io/tags/web/</loc>
     <lastmod>2017-01-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jberusch.github.io/about/</loc>
   </url>
   
 </urlset>

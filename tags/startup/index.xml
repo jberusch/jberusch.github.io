@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Startup on Joe Berusch</title>
+    <link>https://jberusch.github.io/tags/startup/</link>
+    <description>Recent content in Startup on Joe Berusch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jberusch.github.io/tags/startup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fuse</title>
+      <link>https://jberusch.github.io/posts/fuse/</link>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/fuse/</guid>
+      <description>A social media app I built as part of a 3-person dev team in the Summer after my 1st year.
+The project was part of the Accelerator at the Polsky Center for Entrepreneurship and Innovation.
+languages used:
+ React Native (Frontend) Redux (Frontend) Ruby on Rails (Backend)  tools used:
+ Trello Git/Github Testflight (iOS beta testing)  More info on the platform itself here</description>
+    </item>
+    
+  </channel>
+</rss>
