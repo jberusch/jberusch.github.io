@@ -35,14 +35,14 @@
     
     <title>
         
-        Game of Game of Thrones
+        chiRouter
         
     </title>
 </head>
 
 <body>
     <div class="wrap">
-        <div class="section" id="title">Game of Game of Thrones</div>
+        <div class="section" id="title">chiRouter</div>
 
         
 <div class="section" id="content">
@@ -51,21 +51,34 @@
     <div class="tag-container">
         
         <span class="tag">
-            <a href="https://jberusch.github.io/tags/game-of-thrones">
-                Game of Thrones
+            <a href="https://jberusch.github.io/tags/academic">
+                academic
             </a>
         </span>
         
         <span class="tag">
-            <a href="https://jberusch.github.io/tags/board-games">
-                board games
+            <a href="https://jberusch.github.io/tags/networking">
+                networking
             </a>
         </span>
         
     </div>
     
     <hr/>
-    
+    <p>Implemented IPv4, ICMP, and ARP in C, leveraging POX &amp; Mininet.</p>
+
+<p><strong>Class</strong>: CMSC 23300 &ndash; Networks &amp; Distributed Systems</p>
+
+<p><strong>Description</strong>: In this project you will be implementing a simple IP router capable of routing IPv4 datagrams between multiple networks. This router will have a static routing table, so you will not have to deal with implementing a routing protocol like RIP or OSPF; instead, the project will focus on the routing of IP datagrams. While, at a high level, this just involves receiving IP datagrams and figuring out what interface they should be sent on, this requires building additional functionality before you can actually start routing IP datagrams:</p>
+
+<ul>
+<li>Your code must process the raw Ethernet frames that arrive through the router’s interfaces.</li>
+<li>Because you will be working at the Ethernet level, you will need to use ARP to map Ethernet addresses to IP addresses.</li>
+<li>Your router will need to support a small subset of the ICMP protocol so you can use tools like ping and traceroute, and to notify hosts of certain errors (e.g., if the router is given an IP datagram it cannot forward).</li>
+</ul>
+
+<p><strong>Score</strong>: <sup>94</sup>&frasl;<sub>100</sub></p>
+
 </div>
 
 

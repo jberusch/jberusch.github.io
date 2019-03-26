@@ -6,10 +6,21 @@
     <description>Recent content in Networking on Joe Berusch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jberusch.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>chiRouter</title>
+      <link>https://jberusch.github.io/posts/chirouter/</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/chirouter/</guid>
+      <description>Implemented IPv4, ICMP, and ARP in C, leveraging POX &amp;amp; Mininet.
+Class: CMSC 23300 &amp;ndash; Networks &amp;amp; Distributed Systems
+Description: In this project you will be implementing a simple IP router capable of routing IPv4 datagrams between multiple networks. This router will have a static routing table, so you will not have to deal with implementing a routing protocol like RIP or OSPF; instead, the project will focus on the routing of IP datagrams.</description>
+    </item>
     
     <item>
       <title>chIRC</title>
@@ -28,7 +39,7 @@ Description: Your implementation must be compliant enough with the official IRC 
       <pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://jberusch.github.io/posts/chitcp/</guid>
-      <description>implemented Transmission Control Protocol (TCP), usinc C.
+      <description>Implemented Transmission Control Protocol (TCP), usinc C.
 Class: CMSC 23300 &amp;ndash; Networks &amp;amp; Distributed Systems
 Description: chiTCP is a programming assignment where students have to implement the TCP protocol. It provides a framework for students to bypass the operating system’s TCP stack and, instead, use a sandboxed and testable TCP stack that runs in userspace (instead of kernelspace). All the details of how TCP interacts with the other layers of the protocol stack (including how packets are handed down to the network layer, and how data is passed up to the application layer) are already implemented for the students, who can then focus on implementing the TCP protocol itself.</description>
     </item>

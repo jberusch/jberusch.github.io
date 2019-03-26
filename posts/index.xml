@@ -12,13 +12,32 @@
     
     
     <item>
-      <title>Cup of Joe</title>
-      <link>https://jberusch.github.io/posts/cup_of_joe/</link>
-      <pubDate>Sun, 22 Jan 2017 00:00:00 +0000</pubDate>
+      <title>Midway Venture Partners</title>
+      <link>https://jberusch.github.io/posts/mvp/</link>
+      <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://jberusch.github.io/posts/cup_of_joe/</guid>
-      <description>&amp;ndash; proposed project &amp;ndash;
-A podcast for and by students fueled by intellectual excitement.</description>
+      <guid>https://jberusch.github.io/posts/mvp/</guid>
+      <description>I am spear-heading the project to establish an early-stage venture capital fund as a part of the University of Chicago to invest in startups wtih undergraduate founders. The fund (which I&amp;rsquo;ve temporarily named Midway Venture Partners, or MVP) will manage money owned by the University, but will operate by and for students, with all deal sourcing and due diligence performed by undergraduate students, overseen by MBA students at Chicago Booth. Beyond the traditional capital deployment activities of a VC firm, Midway Venture Partners will also work to dramatically expand the UChicago College startup ecosystem.</description>
+    </item>
+    
+    <item>
+      <title>Colossal Quad Adventure</title>
+      <link>https://jberusch.github.io/posts/cqa/</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/cqa/</guid>
+      <description>Colossal Quad Adventure (CQA) is a text-based game, inspired by Adventure and Ready Player One. The game was born out of a series of light-hearted pranks on my Networks &amp;amp; Distribute Systems professor and features him as the main character. CQA is my passion project, in collaboration with my friend, Zayne Khouja, and will hopefully be played by CS Dept. students &amp;amp; faculty alike. Like Ready Player One, CQA involves three keys, each with their own challenges, mirroring significant concepts all students learn within the UChicago CS major.</description>
+    </item>
+    
+    <item>
+      <title>chiRouter</title>
+      <link>https://jberusch.github.io/posts/chirouter/</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/chirouter/</guid>
+      <description>Implemented IPv4, ICMP, and ARP in C, leveraging POX &amp;amp; Mininet.
+Class: CMSC 23300 &amp;ndash; Networks &amp;amp; Distributed Systems
+Description: In this project you will be implementing a simple IP router capable of routing IPv4 datagrams between multiple networks. This router will have a static routing table, so you will not have to deal with implementing a routing protocol like RIP or OSPF; instead, the project will focus on the routing of IP datagrams.</description>
     </item>
     
     <item>
@@ -48,7 +67,7 @@ Description: Your implementation must be compliant enough with the official IRC 
       <pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://jberusch.github.io/posts/chitcp/</guid>
-      <description>implemented Transmission Control Protocol (TCP), usinc C.
+      <description>Implemented Transmission Control Protocol (TCP), usinc C.
 Class: CMSC 23300 &amp;ndash; Networks &amp;amp; Distributed Systems
 Description: chiTCP is a programming assignment where students have to implement the TCP protocol. It provides a framework for students to bypass the operating system’s TCP stack and, instead, use a sandboxed and testable TCP stack that runs in userspace (instead of kernelspace). All the details of how TCP interacts with the other layers of the protocol stack (including how packets are handed down to the network layer, and how data is passed up to the application layer) are already implemented for the students, who can then focus on implementing the TCP protocol itself.</description>
     </item>
@@ -95,7 +114,10 @@ languages used:
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://jberusch.github.io/posts/ib_ee/</guid>
-      <description>Add text of EE</description>
+      <description>As a senior in the International Baccalaureate program, I elected to write my capstone essay on the dramatic shifts in our nation&amp;rsquo;s treatment of juvenile defendants, focusing on Massachusetts in 1990 and 1991.
+The paper can be found here
+Abstract
+Justice in American society is strangely paradoxical &amp;ndash; crime is hot-button topic of conversation, yet prisons are almost always completely ignored. This essay was composed under the following overarching theme: consequences of this paradox and how distancing ourselves from justice and sentencing policy has allowed American society to punish certain groups, specifically the children of America, in this case.</description>
     </item>
     
     <item>
@@ -108,7 +130,7 @@ languages used:
     </item>
     
     <item>
-      <title>**Game of Game of Thrones</title>
+      <title>Game of Game of Thrones</title>
       <link>https://jberusch.github.io/posts/game_of_thrones/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       

@@ -13,8 +13,18 @@
   </url>
   
   <url>
-    <loc>https://jberusch.github.io/posts/cup_of_joe/</loc>
-    <lastmod>2017-01-22T00:00:00+00:00</lastmod>
+    <loc>https://jberusch.github.io/posts/mvp/</loc>
+    <lastmod>2017-01-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/posts/cqa/</loc>
+    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/posts/chirouter/</loc>
+    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -72,7 +82,7 @@
   
   <url>
     <loc>https://jberusch.github.io/tags/academic/</loc>
-    <lastmod>2017-01-20T00:00:00+00:00</lastmod>
+    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -84,6 +94,12 @@
   
   <url>
     <loc>https://jberusch.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/tags/community-building/</loc>
+    <lastmod>2017-01-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -100,8 +116,26 @@
   </url>
   
   <url>
+    <loc>https://jberusch.github.io/tags/entrepreneurship/</loc>
+    <lastmod>2017-01-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/tags/fun/</loc>
+    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://jberusch.github.io/tags/game-of-thrones/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/tags/games/</loc>
+    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -113,7 +147,7 @@
   
   <url>
     <loc>https://jberusch.github.io/tags/networking/</loc>
-    <lastmod>2017-01-20T00:00:00+00:00</lastmod>
+    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -124,20 +158,14 @@
   </url>
   
   <url>
-    <loc>https://jberusch.github.io/tags/passion-project/</loc>
-    <lastmod>2017-01-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jberusch.github.io/tags/podcast/</loc>
-    <lastmod>2017-01-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://jberusch.github.io/tags/politics/</loc>
     <lastmod>2017-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/tags/python/</loc>
+    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -167,7 +195,13 @@
   
   <url>
     <loc>https://jberusch.github.io/tags/</loc>
-    <lastmod>2017-01-20T00:00:00+00:00</lastmod>
+    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jberusch.github.io/tags/venture-capital/</loc>
+    <lastmod>2017-01-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
