@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biotech on Joe Berusch</title>
+    <link>https://jberusch.github.io/tags/biotech/</link>
+    <description>Recent content in Biotech on Joe Berusch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jberusch.github.io/tags/biotech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Due Diligence: Transnostics</title>
+      <link>https://jberusch.github.io/posts/ifa/</link>
+      <pubDate>Wed, 25 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/ifa/</guid>
+      <description>&amp;ndash; description here &amp;ndash;</description>
+    </item>
+    
+  </channel>
+</rss>

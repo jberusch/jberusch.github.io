@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Startups on Joe Berusch</title>
+    <link>https://jberusch.github.io/tags/startups/</link>
+    <description>Recent content in Startups on Joe Berusch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jberusch.github.io/tags/startups/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Due Diligence: Transnostics</title>
+      <link>https://jberusch.github.io/posts/ifa/</link>
+      <pubDate>Wed, 25 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/ifa/</guid>
+      <description>&amp;ndash; description here &amp;ndash;</description>
+    </item>
+    
+    <item>
+      <title>Due Diligence: Brockhampton &amp; 88Rising</title>
+      <link>https://jberusch.github.io/posts/ucr_diligence/</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jberusch.github.io/posts/ucr_diligence/</guid>
+      <description>&amp;ndash; todo: insert google doc &amp;ndash;</description>
+    </item>
+    
+  </channel>
+</rss>
