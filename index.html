@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe - Builder, Writer, Outdoorsman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier Prime', monospace;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header and Navigation */
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+
+        .typewriter-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            border-right: 3px solid #333;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3s steps(30, end), blink-caret 0.8s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #333; }
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #666;
+            letter-spacing: 0.05em;
+        }
+
+        nav {
+            margin-bottom: 3rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            border: 2px solid #333;
+            background-color: #333;
+            color: #f8f8f8;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            color: #555;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* Work Section */
+        .work-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #f9f9f9;
+            border-left: 4px solid #333;
+        }
+
+        .work-item h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .work-item a {
+            color: #333;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+
+        .work-item a:hover {
+            background-color: #333;
+            color: #f8f8f8;
+        }
+
+        /* Writings Section */
+        .writing-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #f9f9f9;
+            border-left: 4px solid #666;
+        }
+
+        .writing-item h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .writing-date {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            border-top: 2px solid #333;
+            color: #666;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .typewriter-title {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Disable animation for users who prefer reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            .typewriter-title {
+                animation: none;
+                border-right: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="typewriter-title">Joe</h1>
+            <p class="subtitle">Builder, Writer, and Dormant Outdoorsman</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#writings">Writings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I'm Joe, a builder who creates things with my hands and my mind. Whether it's crafting code, constructing physical projects, or weaving words into stories, I find joy in the process of bringing ideas to life.
+            </p>
+            <p>
+                My writing explores the intersection of technology and humanity, while my building projects range from software applications to tangible creations. Though I call myself a "dormant outdoorsman," I still find inspiration in nature and the occasional adventure beyond the screen.
+            </p>
+            <p>
+                I believe in the power of simple, well-crafted work and the importance of taking time to think before acting. This philosophy guides everything I build, write, and create.
+            </p>
+        </section>
+
+        <section id="work">
+            <h2>Work</h2>
+            
+            <div class="work-item">
+                <h3>Project Alpha</h3>
+                <p>A comprehensive web application built with modern technologies. Features include user authentication, real-time data processing, and responsive design.</p>
+                <p><a href="https://github.com/yourusername/project-alpha" target="_blank">View on GitHub →</a></p>
+            </div>
+
+            <div class="work-item">
+                <h3>Creative Writing Portfolio</h3>
+                <p>A collection of short stories, essays, and creative non-fiction exploring themes of technology, nature, and human connection.</p>
+                <p><a href="https://github.com/yourusername/writing-portfolio" target="_blank">View on GitHub →</a></p>
+            </div>
+
+            <div class="work-item">
+                <h3>Open Source Contributions</h3>
+                <p>Regular contributions to various open source projects, focusing on documentation, bug fixes, and feature enhancements.</p>
+                <p><a href="https://github.com/yourusername" target="_blank">View GitHub Profile →</a></p>
+            </div>
+        </section>
+
+        <section id="writings">
+            <h2>Writings</h2>
+            
+            <div class="writing-item">
+                <div class="writing-date">January 2024</div>
+                <h3>The Art of Digital Minimalism</h3>
+                <p>Exploring how reducing digital clutter can lead to more meaningful work and deeper focus. A personal journey through simplification.</p>
+            </div>
+
+            <div class="writing-item">
+                <div class="writing-date">December 2023</div>
+                <h3>Building in Public</h3>
+                <p>Reflections on the vulnerability and growth that comes from sharing your creative process with the world.</p>
+            </div>
+
+            <div class="writing-item">
+                <div class="writing-date">November 2023</div>
+                <h3>The Dormant Outdoorsman's Guide to Indoor Adventures</h3>
+                <p>A humorous take on bringing outdoor mindfulness and adventure into everyday indoor life.</p>
+            </div>
+
+            <div class="writing-item">
+                <div class="writing-date">October 2023</div>
+                <h3>Code as Craft</h3>
+                <p>Drawing parallels between traditional craftsmanship and modern software development, exploring the artistry in clean code.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:joe@example.com">joe@example.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/yourusername" target="_blank">@yourusername</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://linkedin.com/in/yourprofile" target="_blank">Connect with me</a></p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Joe. Built with purpose, hosted with pride.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
