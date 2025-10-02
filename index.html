@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joe - Builder, Writer, Outdoorsman</title>
+    <title>Yo, it's Joe</title>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -163,6 +163,13 @@
             margin-bottom: 0.5rem;
         }
 
+        /* Beliefs (thoughts) - collapsible items */
+        #thoughts .writing-item > :not(h3) { display: none; }
+        #thoughts .writing-item.open > :not(h3) { display: block; }
+        #thoughts .writing-item h3 { cursor: pointer; }
+        #thoughts .writing-item h3::after { content: "  +"; color: #666; font-weight: 400; }
+        #thoughts .writing-item.open h3::after { content: "  −"; }
+
         /* Contact Section */
         .contact-info {
             display: grid;
@@ -234,68 +241,133 @@
 <body>
     <div class="container">
         <header>
-            <h1 class="typewriter-title">Joe</h1>
-            <p class="subtitle">Builder, Writer, and Dormant Outdoorsman</p>
+            <h1 class="typewriter-title">just your average Joe</h1>
         </header>
 
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#writings">Writings</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#writings">writings</a></li>
+                <li><a href="#work">jobby jobs</a></li>
+                <li><a href="#thoughts">beliefs</a></li>
+                <li><a href="#media">favorite media</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
 
         <section id="about">
-            <h2>About</h2>
+            <h2>about</h2>
             <p>
-                I'm Joe, a builder who creates things with my hands and my mind. Whether it's crafting code, constructing physical projects, or weaving words into stories, I find joy in the process of bringing ideas to life.
-            </p>
-            <p>
-                My writing explores the intersection of technology and humanity, while my building projects range from software applications to tangible creations. Though I call myself a "dormant outdoorsman," I still find inspiration in nature and the occasional adventure beyond the screen.
-            </p>
-            <p>
-                I believe in the power of simple, well-crafted work and the importance of taking time to think before acting. This philosophy guides everything I build, write, and create.
+                hi, i'm Joe.
             </p>
         </section>
 
         <section id="writings">
-            <h2>Writings</h2>
-            
+            <h2>writings</h2>
+
             <div class="writing-item">
                 <div class="writing-date">October 2025</div>
                 <h3>how to use a flip phone</h3>
-                <p><a href="writings/how-to-use-a-flip-phone.html">Read full article →</a></p>
-            </div>
-            
-            <div class="writing-item">
-                <div class="writing-date">January 2024</div>
-                <h3>The Art of Digital Minimalism</h3>
-                <p>Exploring how reducing digital clutter can lead to more meaningful work and deeper focus. A personal journey through simplification.</p>
-                <p><a href="writings/digital-minimalism.html">Read full article →</a></p>
+                <p>on temptation, intentionality, and painting pictures only you can see.</p>
+                <p><a href="writings/how-to-use-a-flip-phone.html">read it →</a></p>
             </div>
 
             <div class="writing-item">
-                <div class="writing-date">November 2023</div>
-                <h3>The Dormant Outdoorsman's Guide to Indoor Adventures</h3>
-                <p>< In Progress ></In></p>
+                <div class="writing-date">May 2021</div>
+                <h3>carlotta magic</h3>
+                <p>on speed, spectacle, and a desert oasis built on "Carlotta Magic."</p>
+                <p><a href="writings/carlotta-magic.html">read it →</a></p>
             </div>
         </section>
 
         <section id="work">
-            <h2>Work</h2>
+            <h2>jobby jobs</h2>
             
             <div class="work-item">
                 <h3>Wefunder</h3>
-                <p>A Y Combinator-backed platform for startups to raise capital from accredited investors.</p>
-                <p><a href="https://wefunder.com" target="_blank">Check it out →</a></p>
+                <p>YC-backed platform to help startups raise money from their communities.</p>
+                <p>Job "titles":</p>
+                <ul>
+                    <li>Started as a fundraising intern</li>
+                    <li>Joined full-time as Account Manager</li>
+                    <li>Switched to Product Engineer</li>
+                </ul>
+                <br>
+                <p>Lessons learned:</p>
+                <ul>
+                    <li>Always ask the folow-up question</li>
+                    <li>Hiring for aptitude, attitude, and alignment - not qualifications</li>
+                    <li>Separate planning from execution</li>
+                    <li>Just because someone else thinks something is an emergency doesn't mean it is</li>
+                    <li>Community is something you give to, not take from</li>
+                </ul>
+                <br>
+                <p>Skills gained:</p>
+                <ul>
+                    <li>Intentionality</li>
+                    <li>Focus</li>
+                    <li>How to say no</li>
+                    <li>How to interview someone so you actually know if they're good</li>
+                    <li>How to turn ideas into scopes, scopes into Figmas, Figmas into code, and code into features for users</li>
+                </ul>
+                <br>
+                <p><a href="https://wefunder.com" target="_blank">Wefunder →</a></p>
             </div>
 
             <div class="work-item">
                 <h3>Backroads</h3>
-                <p>A collection of short stories, essays, and creative non-fiction exploring themes of technology, nature, and human connection.</p>
-                <p><a href="https://github.com/yourusername/writing-portfolio" target="_blank">View on GitHub →</a></p>
+                <p>(coming soon)</p>
+            </div>
+        </section>
+
+        <section id="media">
+            <h2>favorite media</h2>
+
+            <div class="writing-item">
+                <h3>album: The Crux</h3>
+                <p>catchy melodies, retro indie sounds, and funny lyrics. feels like angst that's good for you.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnDfXoTlvlxDFqTJXnRWKwJDvfSJ8iloVe3Q&s" alt="Crux album cover">
+            </div>
+
+            <div class="writing-item">
+                <h3>book: A Visit from the Goon Squad</h3>
+                <p>i'm a sucker for stories with expansive plotlines that all intertwine</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cHBbN6-qeMoMqy38uNPTfR9QsD9p6aQqSw&s" alt="A Visit from the Goon Squad book cover">
+            </div>
+
+            <div class="writing-item">
+                <h3>book: The Overstory</h3>
+                <p>"people have no idea what time is. They think it’s a line, spinning out from three seconds behind them, then vanishing just as fast into the three seconds of fog just ahead. They can’t see that time is one spreading ring wrapped around another, outward and outward until the thinnest skin of Now depends for its being on the enormous mass of everything that has already died.”</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXto7uFqs5Nns2Gdl5RYVqgf75f5zmGBztlw&s" alt="The Overstory book cover">
+            </div>
+
+            <p><a href="media/index.html">view all →</a></p>
+        </section>
+
+        <section id="thoughts">
+            <h2>beliefs</h2>
+            
+            <div class="writing-item">
+                <h3>SEC v Ted Cruz is dumb</h3>
+                <div class="writing-date">(strongly held)</div>
+                <p>In 2022, SCOTUS said this is ok:</p>
+                <p>1. Ted Cruz loans his campaign $260K of his own money ($10k over the legal limit)</p>
+                <p>2. Cruz wins his election</p>
+                <p>3. AFTER he wins the election, donors continue to give him money (because, obviously?)</p>
+                <p>4. Cruz uses that money to pay off his campaign loan <b>with interest</b></p>
+                <p>
+                    Basically, I can give money to a newly-elected politician, and they can put it right in their pocket.
+                    If that's not corrupt, I don't know what is.
+                </p>
+                <hr><br>
+                <p>I have many issues with this case, but two issues more generally:</p>
+                <p>1. I don't think money = speech. So I dislike the slew of bad caselaw we've build atop that principle.</p>
+                <p>2. I dislike that Supreme Court justices so often analyze questions they so clearly have no expertise in and seek no evidence. e.g. "Do loan repayments from donors to candidates affect voting behavior? Does the American public perceive these actions as corrupt?"</p>
+            </div>
+
+            <div class="writing-item">
+                <h3>attention is valuable</h3>
+                <p>(coming soon)</p>
             </div>
         </section>
 
@@ -304,7 +376,7 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <h3>Email</h3>
-                    <p><a href="mailto:joe@example.com">joe berusch [at] gmail [dot] com</a></p>
+                    <p>joe berusch [at] gmail [dot] com</p>
                 </div>
             </div>
         </section>
@@ -322,6 +394,29 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+            });
+        });
+
+        // Collapsible beliefs (thoughts) section
+        const beliefItems = document.querySelectorAll('#thoughts .writing-item');
+        beliefItems.forEach(item => {
+            const header = item.querySelector('h3');
+            if (!header) return;
+            header.setAttribute('tabindex', '0');
+            header.setAttribute('role', 'button');
+            header.setAttribute('aria-expanded', 'false');
+
+            const toggle = () => {
+                const isOpen = item.classList.toggle('open');
+                header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            };
+
+            header.addEventListener('click', toggle);
+            header.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggle();
+                }
             });
         });
     </script>
