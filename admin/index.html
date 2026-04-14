@@ -6,246 +6,314 @@ layout: null
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog admin</title>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <title>write // DISPATCHES</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Courier Prime', monospace;
-            background-color: #f8f8f8;
-            color: #333;
-            line-height: 1.6;
+        :root {
+            --paper: #f2ebd8;
+            --paper-dark: #e6dec5;
+            --ink: #1a1612;
+            --pink: #ff4d8d;
+            --pink-soft: rgba(255, 77, 141, 0.85);
+            --blue: #1e3a8a;
+            --blue-soft: rgba(30, 58, 138, 0.85);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: 'Special Elite', 'Courier New', monospace;
+            font-size: 16px;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' seed='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.07 0 0 0 0 0.05 0 0 0 0.12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+            pointer-events: none;
+            mix-blend-mode: multiply;
+            z-index: 100;
+            opacity: 0.7;
         }
 
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 40px 32px 100px;
         }
 
-        header {
+        /* Nav */
+        .top-nav {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid #333;
+            gap: 0;
+            margin-bottom: 36px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--ink);
         }
-
-        header a, header button {
-            font-family: 'Courier Prime', monospace;
-            color: #333;
-            text-decoration: none;
+        .top-nav a, .top-nav button {
+            font-family: 'Space Mono', monospace;
+            font-size: 11px;
             font-weight: 700;
-            font-size: 1rem;
-            letter-spacing: 0.1em;
-            padding: 0.4rem 0.8rem;
-            border: 2px solid transparent;
-            background: none;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--ink);
+            padding: 8px 18px;
+            border: 2px solid var(--ink);
+            margin-right: -2px;
+            background: var(--paper);
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: transform 0.15s, background 0.15s;
         }
-
-        header a:hover, header button:hover {
-            border-color: #333;
-            background-color: #333;
-            color: #f8f8f8;
+        .top-nav a:hover, .top-nav button:hover {
+            background: var(--pink);
+            color: var(--paper);
+            transform: translate(-1px, -1px);
         }
-
-        header .spacer { flex: 1; }
+        .top-nav a:nth-child(even):hover, .top-nav button:nth-child(even):hover { background: var(--blue); }
+        .top-nav .spacer { flex: 1; border: none; }
+        .top-nav .zine-name {
+            font-family: 'DM Serif Display', serif;
+            font-size: 20px;
+            color: var(--ink);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            margin-right: auto;
+            padding: 0;
+            border: none;
+            text-shadow: 1px 1px 0 var(--pink-soft), -1px -1px 0 var(--blue-soft);
+        }
+        .top-nav .zine-name:hover { background: transparent; color: var(--ink); transform: none; }
+        .top-nav .logout-btn {
+            color: var(--ink);
+            opacity: 0.5;
+            border-color: rgba(26,22,18,0.3);
+        }
+        .top-nav .logout-btn:hover { opacity: 1; background: var(--ink); color: var(--paper); }
 
         h1 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
+            font-family: 'DM Serif Display', serif;
+            font-size: 36px;
+            font-weight: normal;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
         }
 
         /* Auth screen */
         .auth-screen {
             text-align: center;
-            padding: 4rem 2rem;
+            padding: 80px 24px;
         }
-
+        .auth-screen h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px 0 var(--pink-soft), -1px -1px 0 var(--blue-soft);
+            margin-bottom: 16px;
+        }
         .auth-screen p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
+            margin-bottom: 24px;
+            font-size: 15px;
         }
-
         .auth-screen input {
-            font-family: 'Courier Prime', monospace;
-            font-size: 1rem;
-            padding: 0.6rem 1rem;
-            border: 2px solid #333;
-            background: #fff;
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+            padding: 10px 16px;
+            border: 2px solid var(--ink);
+            background: var(--paper-dark);
+            color: var(--ink);
             width: 100%;
-            max-width: 400px;
-            margin-bottom: 1rem;
+            max-width: 420px;
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
         }
-
+        .auth-screen input::placeholder { color: rgba(26,22,18,0.4); }
         .auth-screen .help {
-            font-size: 0.85rem;
-            color: #888;
-            margin-top: 0.5rem;
+            font-family: 'Space Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 0.1em;
+            color: var(--ink);
+            opacity: 0.6;
+            margin-top: 8px;
         }
-
-        .auth-screen .help a {
-            color: #555;
-        }
+        .auth-screen .help a { color: var(--blue); }
 
         /* Post list */
         .post-list-item {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 1rem 1.5rem;
-            margin-bottom: 0.75rem;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-left: 4px solid #333;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            background: var(--paper);
+            border: 2px solid var(--ink);
             cursor: pointer;
-            transition: box-shadow 0.2s ease;
+            transition: transform 0.15s, box-shadow 0.15s;
         }
-
-        .post-list-item:hover {
-            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-        }
-
-        .post-list-item .post-info {
-            flex: 1;
-        }
-
+        .post-list-item:nth-child(odd) { box-shadow: 4px 4px 0 var(--pink-soft); }
+        .post-list-item:nth-child(even) { box-shadow: 4px 4px 0 var(--blue-soft); }
+        .post-list-item:hover { transform: translate(-2px, -2px); }
+        .post-list-item .post-info { flex: 1; }
         .post-list-item .post-title {
-            font-weight: 700;
-            font-size: 1.1rem;
+            font-family: 'DM Serif Display', serif;
+            font-size: 20px;
+            font-weight: normal;
         }
-
         .post-list-item .post-date {
-            font-size: 0.85rem;
-            color: #888;
+            font-family: 'Space Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            opacity: 0.6;
+            margin-top: 2px;
         }
-
         .post-list-item .delete-btn {
-            font-family: 'Courier Prime', monospace;
+            font-family: 'Space Mono', monospace;
+            font-size: 9px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
             background: none;
-            border: 1px solid #ccc;
-            color: #999;
-            padding: 0.3rem 0.6rem;
+            border: 1px solid rgba(26,22,18,0.3);
+            color: var(--ink);
+            opacity: 0.4;
+            padding: 4px 10px;
             cursor: pointer;
-            font-size: 0.85rem;
             transition: all 0.2s;
         }
-
         .post-list-item .delete-btn:hover {
-            border-color: #c00;
-            color: #c00;
+            opacity: 1;
+            border-color: var(--pink);
+            color: var(--pink);
         }
 
         /* Editor */
-        .editor-section { margin-top: 1rem; }
-
+        .editor-section { margin-top: 8px; }
         .title-input {
-            font-family: 'Courier Prime', monospace;
-            font-size: 1.4rem;
-            font-weight: 700;
-            padding: 0.6rem 1rem;
-            border: 2px solid #333;
-            background: #fff;
+            font-family: 'DM Serif Display', serif;
+            font-size: 32px;
+            font-weight: normal;
+            padding: 12px 16px;
+            border: 2px solid var(--ink);
+            background: var(--paper-dark);
+            color: var(--ink);
             width: 100%;
-            margin-bottom: 1rem;
+            margin-bottom: 16px;
+            letter-spacing: -0.01em;
         }
+        .title-input::placeholder { color: rgba(26,22,18,0.35); }
+
+        .tags-input {
+            font-family: 'Space Mono', monospace;
+            font-size: 12px;
+            padding: 8px 12px;
+            border: 2px solid var(--ink);
+            background: var(--paper-dark);
+            color: var(--ink);
+            width: 100%;
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+        }
+        .tags-input::placeholder { color: rgba(26,22,18,0.4); }
 
         .editor-actions {
             display: flex;
-            gap: 0.75rem;
-            margin-top: 1rem;
+            gap: 12px;
+            margin-top: 16px;
         }
 
         .btn {
-            font-family: 'Courier Prime', monospace;
-            font-size: 1rem;
+            font-family: 'Space Mono', monospace;
+            font-size: 11px;
             font-weight: 700;
-            padding: 0.6rem 1.5rem;
-            border: 2px solid #333;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 10px 24px;
+            border: 2px solid var(--ink);
             cursor: pointer;
-            letter-spacing: 0.05em;
-            transition: all 0.3s ease;
+            transition: transform 0.15s, background 0.15s;
         }
-
         .btn-primary {
-            background-color: #333;
-            color: #f8f8f8;
+            background: var(--pink);
+            color: var(--paper);
+            box-shadow: 3px 3px 0 var(--ink);
         }
-
         .btn-primary:hover {
-            background-color: #555;
-            border-color: #555;
+            transform: translate(-1px, -1px);
+            box-shadow: 4px 4px 0 var(--ink);
         }
-
         .btn-secondary {
-            background-color: #fff;
-            color: #333;
+            background: var(--paper);
+            color: var(--ink);
         }
-
         .btn-secondary:hover {
-            background-color: #eee;
+            background: var(--paper-dark);
+            transform: translate(-1px, -1px);
         }
-
-        .btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
+        .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 
         .status-msg {
-            margin-top: 1rem;
-            padding: 0.75rem 1rem;
-            font-size: 0.95rem;
+            margin-top: 16px;
+            padding: 12px 16px;
+            font-family: 'Space Mono', monospace;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            border: 2px solid;
         }
-
         .status-msg.success {
-            background: #e8f5e9;
-            border: 1px solid #a5d6a7;
-            color: #2e7d32;
+            background: var(--paper-dark);
+            border-color: var(--blue);
+            color: var(--blue);
         }
-
         .status-msg.error {
-            background: #ffebee;
-            border: 1px solid #ef9a9a;
-            color: #c62828;
+            background: var(--paper-dark);
+            border-color: var(--pink);
+            color: var(--pink);
         }
 
-        /* EasyMDE overrides to match site style */
+        /* EasyMDE overrides */
         .EasyMDEContainer .CodeMirror {
-            font-family: 'Courier Prime', monospace;
-            font-size: 1.05rem;
-            border: 2px solid #333;
+            font-family: 'Special Elite', 'Courier New', monospace;
+            font-size: 15px;
+            line-height: 1.65;
+            border: 2px solid var(--ink);
             border-top: none;
-            min-height: 350px;
+            background: var(--paper-dark);
+            color: var(--ink);
+            min-height: 400px;
         }
-
         .EasyMDEContainer .editor-toolbar {
-            border: 2px solid #333;
-            border-bottom: 1px solid #ddd;
-            background: #fff;
+            border: 2px solid var(--ink);
+            border-bottom: 1px solid rgba(26,22,18,0.2);
+            background: var(--paper);
         }
-
+        .EasyMDEContainer .editor-toolbar button {
+            color: var(--ink) !important;
+        }
         .EasyMDEContainer .editor-toolbar button:hover {
-            background: #333;
-            color: #f8f8f8;
+            background: var(--pink) !important;
+            color: var(--paper) !important;
         }
-
         .EasyMDEContainer .editor-toolbar button.active {
-            background: #333;
-            color: #f8f8f8;
+            background: var(--blue) !important;
+            color: var(--paper) !important;
+        }
+        .EasyMDEContainer .editor-toolbar i.separator {
+            border-color: rgba(26,22,18,0.2);
+        }
+        .EasyMDEContainer .CodeMirror-cursor {
+            border-color: var(--pink);
         }
 
         .hidden { display: none; }
 
-        @media (max-width: 768px) {
-            .container { padding: 1rem; }
-            h1 { font-size: 1.4rem; }
-            .title-input { font-size: 1.1rem; }
+        @media (max-width: 640px) {
+            .container { padding: 24px 16px 80px; }
+            .title-input { font-size: 24px; }
             .editor-actions { flex-direction: column; }
+            .top-nav a, .top-nav button { padding: 6px 12px; font-size: 10px; }
+            .top-nav .zine-name { font-size: 16px; }
         }
     </style>
 </head>
@@ -253,30 +321,29 @@ layout: null
     <div class="container">
         <!-- Auth screen -->
         <div id="auth-screen" class="auth-screen">
-            <h1>blog admin</h1>
-            <p>enter your github personal access token to manage posts.</p>
+            <h1>DISPATCHES</h1>
+            <p>enter your github token to start writing.</p>
             <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxx">
             <br>
             <button class="btn btn-primary" onclick="saveToken()">connect</button>
             <p class="help">
-                need a token? <a href="https://github.com/settings/tokens/new?scopes=repo&description=blog-admin" target="_blank">create one here</a> with "repo" scope.
+                need a token? <a href="https://github.com/settings/tokens/new?scopes=public_repo&description=dispatches-blog" target="_blank">create one here</a> with "public_repo" scope.
             </p>
         </div>
 
         <!-- Main app -->
         <div id="app" class="hidden">
-            <header>
-                <a href="/">home</a>
-                <a href="/blog/">blog</a>
+            <div class="top-nav">
+                <a href="/" class="zine-name">DISPATCHES</a>
                 <div class="spacer"></div>
                 <button onclick="showList()">all posts</button>
                 <button onclick="newPost()">+ new post</button>
-                <button onclick="logout()" style="color:#999;border-color:#ccc;">logout</button>
-            </header>
+                <button onclick="logout()" class="logout-btn">logout</button>
+            </div>
 
             <!-- Post list view -->
             <div id="list-view">
-                <h1>posts</h1>
+                <h1>Posts</h1>
                 <div id="post-list">loading...</div>
             </div>
 
@@ -284,9 +351,10 @@ layout: null
             <div id="editor-view" class="hidden">
                 <div class="editor-section">
                     <input type="text" id="post-title" class="title-input" placeholder="post title">
+                    <input type="text" id="post-tags" class="tags-input" placeholder="tags (comma separated, e.g. notebook, climbing, music)">
                     <textarea id="editor"></textarea>
                     <div class="editor-actions">
-                        <button class="btn btn-primary" id="save-btn" onclick="savePost()">publish</button>
+                        <button class="btn btn-primary" id="save-btn" onclick="savePost()">&#9670; publish</button>
                         <button class="btn btn-secondary" onclick="showList()">cancel</button>
                     </div>
                     <div id="status" class="hidden"></div>
@@ -302,9 +370,7 @@ layout: null
         const API = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/_posts`;
 
         let editor = null;
-        let currentFile = null; // { name, sha } when editing existing post
-
-        // --- Auth ---
+        let currentFile = null;
 
         function getToken() {
             return localStorage.getItem('blog_admin_token');
@@ -329,8 +395,6 @@ layout: null
             };
         }
 
-        // --- Init ---
-
         function init() {
             if (!getToken()) {
                 document.getElementById('auth-screen').classList.remove('hidden');
@@ -341,8 +405,6 @@ layout: null
             document.getElementById('app').classList.remove('hidden');
             showList();
         }
-
-        // --- Post List ---
 
         async function showList() {
             document.getElementById('list-view').classList.remove('hidden');
@@ -361,11 +423,10 @@ layout: null
                 const files = await res.json();
 
                 if (!Array.isArray(files) || files.length === 0) {
-                    listEl.innerHTML = '<p style="color:#888;">no posts yet. click "+ new post" to start.</p>';
+                    listEl.innerHTML = '<p style="opacity:0.5;">no posts yet. click "+ new post" to start.</p>';
                     return;
                 }
 
-                // Sort newest first
                 files.sort((a, b) => b.name.localeCompare(a.name));
 
                 listEl.innerHTML = files
@@ -384,11 +445,9 @@ layout: null
                             </div>`;
                     }).join('');
             } catch (err) {
-                listEl.innerHTML = `<p style="color:#c00;">error: ${err.message}</p>`;
+                listEl.innerHTML = `<p style="color:var(--pink);">error: ${err.message}</p>`;
             }
         }
-
-        // --- Editor ---
 
         function initEditor(content) {
             if (editor) {
@@ -407,7 +466,7 @@ layout: null
                 toolbar: [
                     'bold', 'italic', 'heading', '|',
                     'quote', 'unordered-list', 'ordered-list', '|',
-                    'link', 'image', '|',
+                    'link', 'image', 'horizontal-rule', '|',
                     'preview', 'side-by-side', '|',
                     'guide'
                 ]
@@ -417,6 +476,7 @@ layout: null
         function newPost() {
             currentFile = null;
             document.getElementById('post-title').value = '';
+            document.getElementById('post-tags').value = '';
             document.getElementById('list-view').classList.add('hidden');
             document.getElementById('editor-view').classList.remove('hidden');
             hideStatus();
@@ -433,30 +493,32 @@ layout: null
                 const file = await res.json();
                 const raw = atob(file.content);
 
-                // Parse frontmatter
                 const fmMatch = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
                 let title = '';
+                let tags = '';
                 let body = raw;
 
                 if (fmMatch) {
                     const fm = fmMatch[1];
                     const titleMatch = fm.match(/title:\s*"?([^"\n]+)"?/);
                     if (titleMatch) title = titleMatch[1];
+                    const tagsMatch = fm.match(/tags:\s*\[([^\]]*)\]/);
+                    if (tagsMatch) tags = tagsMatch[1].replace(/"/g, '').trim();
                     body = fmMatch[2];
                 }
 
                 currentFile = { name, sha: file.sha };
                 document.getElementById('post-title').value = title;
+                document.getElementById('post-tags').value = tags;
                 initEditor(body.trim());
             } catch (err) {
                 showStatus(`error loading post: ${err.message}`, 'error');
             }
         }
 
-        // --- Save ---
-
         async function savePost() {
             const title = document.getElementById('post-title').value.trim();
+            const tagsRaw = document.getElementById('post-tags').value.trim();
             const body = editor.value().trim();
 
             if (!title) {
@@ -472,7 +534,11 @@ layout: null
             const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
             const filename = currentFile ? currentFile.name : `${today}-${slug}.md`;
 
-            const frontmatter = `---\ntitle: "${title}"\ndate: ${today}\n---\n\n`;
+            const tags = tagsRaw ? tagsRaw.split(',').map(t => `"${t.trim()}"`).join(', ') : '';
+            let frontmatter = `---\ntitle: "${title}"\ndate: ${today}\n`;
+            if (tags) frontmatter += `tags: [${tags}]\n`;
+            frontmatter += `---\n\n`;
+
             const content = frontmatter + body + '\n';
             const encoded = btoa(unescape(encodeURIComponent(content)));
 
@@ -507,11 +573,9 @@ layout: null
                 showStatus(`save failed: ${err.message}`, 'error');
             } finally {
                 saveBtn.disabled = false;
-                saveBtn.textContent = 'publish';
+                saveBtn.textContent = '◆ publish';
             }
         }
-
-        // --- Delete ---
 
         async function deletePost(name, sha) {
             if (!confirm(`delete "${name}"?`)) return;
@@ -536,8 +600,6 @@ layout: null
             }
         }
 
-        // --- Status ---
-
         function showStatus(msg, type) {
             const el = document.getElementById('status');
             el.className = `status-msg ${type}`;
@@ -549,7 +611,6 @@ layout: null
             document.getElementById('status').classList.add('hidden');
         }
 
-        // --- Boot ---
         init();
     </script>
 </body>

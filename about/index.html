@@ -1,0 +1,265 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>about // DISPATCHES</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f2ebd8;
+    --paper-dark: #e6dec5;
+    --ink: #1a1612;
+    --pink: #ff4d8d;
+    --pink-soft: rgba(255, 77, 141, 0.85);
+    --blue: #1e3a8a;
+    --blue-soft: rgba(30, 58, 138, 0.85);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Special Elite', 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' seed='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.07 0 0 0 0 0.05 0 0 0 0.12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    z-index: 100;
+    opacity: 0.7;
+  }
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0; bottom: 0; left: 50%;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, rgba(26,22,18,0.08) 20%, rgba(26,22,18,0.08) 80%, transparent);
+    pointer-events: none;
+    z-index: 99;
+  }
+
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 32px 100px;
+  }
+
+  .top-nav {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 48px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .top-nav a {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ink);
+    padding: 8px 18px;
+    border: 2px solid var(--ink);
+    margin-right: -2px;
+    background: var(--paper);
+    transition: transform 0.15s, background 0.15s;
+  }
+  .top-nav a:hover {
+    background: var(--pink);
+    color: var(--paper);
+    transform: translate(-1px, -1px);
+  }
+  .top-nav a:nth-child(even):hover { background: var(--blue); }
+  .top-nav .spacer { flex: 1; }
+  .top-nav .zine-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    margin-right: auto;
+    padding: 0;
+    border: none;
+    text-shadow: 1px 1px 0 var(--pink-soft), -1px -1px 0 var(--blue-soft);
+  }
+  .top-nav .zine-name:hover { background: transparent; color: var(--ink); transform: none; }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 52px;
+    font-weight: normal;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+    text-shadow: 2px 2px 0 var(--pink-soft), -1px -1px 0 var(--blue-soft);
+    mix-blend-mode: multiply;
+  }
+
+  .about-card {
+    border: 3px solid var(--ink);
+    background: var(--paper-dark);
+    padding: 36px 40px 40px;
+    position: relative;
+    box-shadow: 8px 8px 0 var(--blue-soft);
+    margin-bottom: 36px;
+  }
+  .about-card::before {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    border: 1px dashed var(--ink);
+    pointer-events: none;
+    opacity: 0.2;
+  }
+  .about-card p {
+    margin: 0 0 1.2em;
+    font-size: 15.5px;
+  }
+  .about-card p:last-child { margin-bottom: 0; }
+  .about-card a {
+    color: var(--blue);
+    font-weight: 700;
+    text-decoration: none;
+    background: linear-gradient(var(--pink-soft), var(--pink-soft));
+    background-size: 100% 0.3em;
+    background-position: 0 90%;
+    background-repeat: no-repeat;
+  }
+  .about-card a:hover {
+    background-size: 100% 100%;
+    color: var(--paper);
+  }
+
+  .section-label {
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: var(--pink);
+    color: var(--paper);
+    padding: 5px 12px;
+    margin-bottom: 16px;
+    box-shadow: 3px 3px 0 var(--blue-soft);
+  }
+  .section-label.alt {
+    background: var(--blue);
+    box-shadow: 3px 3px 0 var(--pink-soft);
+  }
+
+  .work-card {
+    border: 2px solid var(--ink);
+    background: var(--paper);
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 0 var(--pink-soft);
+  }
+  .work-card:nth-child(odd) { box-shadow: 5px 5px 0 var(--blue-soft); }
+  .work-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 26px;
+    font-weight: normal;
+    margin: 0 0 8px;
+    line-height: 1.1;
+  }
+  .work-card .role {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--blue);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .work-card p {
+    font-size: 14.5px;
+    margin: 0 0 0.8em;
+  }
+  .work-card p:last-child { margin-bottom: 0; }
+  .work-card a {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  .contact-block {
+    margin-top: 8px;
+    font-size: 15px;
+  }
+  .contact-block p {
+    margin-bottom: 0.6em;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 6px solid var(--ink);
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.5;
+  }
+
+  @media (max-width: 640px) {
+    .container { padding: 24px 16px 80px; }
+    h1 { font-size: 36px; }
+    .about-card { padding: 24px 22px 28px; }
+    .top-nav a { padding: 6px 12px; font-size: 10px; }
+    .top-nav .zine-name { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-nav">
+      <a href="/" class="zine-name">DISPATCHES</a>
+      <div class="spacer"></div>
+      <a href="/">posts</a>
+      <a href="/about/">about</a>
+    </div>
+
+    <h1>About</h1>
+
+    <div class="about-card">
+      <p>hi, i'm Joe. i live in San Francisco and write about small rebellions -- the flip phone, the folded futon, the things you do when you decide the default isn't working.</p>
+      <p>by day i build product at <a href="https://wefunder.com">Wefunder</a>, a platform that helps startups raise money from their communities.</p>
+    </div>
+
+    <span class="section-label alt">&#9670; Work</span>
+
+    <div class="work-card">
+      <h3>Wefunder</h3>
+      <div class="role">Intern &#8594; Account Manager &#8594; Product Engineer</div>
+      <p>YC-backed platform to help startups raise money from their communities. Learned to ask the follow-up question, hire for aptitude over qualifications, and separate planning from execution.</p>
+      <p><a href="https://wefunder.com" target="_blank">wefunder.com &#8594;</a></p>
+    </div>
+
+    <div class="work-card">
+      <h3>Backroads</h3>
+      <div class="role">Coming soon</div>
+    </div>
+
+    <span class="section-label">&#9670; Contact</span>
+    <div class="contact-block">
+      <p>joe berusch [at] gmail [dot] com</p>
+    </div>
+
+    <footer>
+      <p>&copy; MMXXVI JOE &middot; <a href="/privacy.html" style="color:inherit;text-decoration:underline;">PRIVACY</a></p>
+    </footer>
+  </div>
+</body>
+</html>
