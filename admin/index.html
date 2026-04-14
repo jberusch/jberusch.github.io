@@ -1,0 +1,556 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Courier Prime', monospace;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #333;
+        }
+
+        header a, header button {
+            font-family: 'Courier Prime', monospace;
+            color: #333;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+            padding: 0.4rem 0.8rem;
+            border: 2px solid transparent;
+            background: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        header a:hover, header button:hover {
+            border-color: #333;
+            background-color: #333;
+            color: #f8f8f8;
+        }
+
+        header .spacer { flex: 1; }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Auth screen */
+        .auth-screen {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .auth-screen p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .auth-screen input {
+            font-family: 'Courier Prime', monospace;
+            font-size: 1rem;
+            padding: 0.6rem 1rem;
+            border: 2px solid #333;
+            background: #fff;
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 1rem;
+        }
+
+        .auth-screen .help {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 0.5rem;
+        }
+
+        .auth-screen .help a {
+            color: #555;
+        }
+
+        /* Post list */
+        .post-list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            margin-bottom: 0.75rem;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-left: 4px solid #333;
+            cursor: pointer;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .post-list-item:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+
+        .post-list-item .post-info {
+            flex: 1;
+        }
+
+        .post-list-item .post-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .post-list-item .post-date {
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        .post-list-item .delete-btn {
+            font-family: 'Courier Prime', monospace;
+            background: none;
+            border: 1px solid #ccc;
+            color: #999;
+            padding: 0.3rem 0.6rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .post-list-item .delete-btn:hover {
+            border-color: #c00;
+            color: #c00;
+        }
+
+        /* Editor */
+        .editor-section { margin-top: 1rem; }
+
+        .title-input {
+            font-family: 'Courier Prime', monospace;
+            font-size: 1.4rem;
+            font-weight: 700;
+            padding: 0.6rem 1rem;
+            border: 2px solid #333;
+            background: #fff;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .editor-actions {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            font-family: 'Courier Prime', monospace;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.6rem 1.5rem;
+            border: 2px solid #333;
+            cursor: pointer;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #333;
+            color: #f8f8f8;
+        }
+
+        .btn-primary:hover {
+            background-color: #555;
+            border-color: #555;
+        }
+
+        .btn-secondary {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background-color: #eee;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .status-msg {
+            margin-top: 1rem;
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+        }
+
+        .status-msg.success {
+            background: #e8f5e9;
+            border: 1px solid #a5d6a7;
+            color: #2e7d32;
+        }
+
+        .status-msg.error {
+            background: #ffebee;
+            border: 1px solid #ef9a9a;
+            color: #c62828;
+        }
+
+        /* EasyMDE overrides to match site style */
+        .EasyMDEContainer .CodeMirror {
+            font-family: 'Courier Prime', monospace;
+            font-size: 1.05rem;
+            border: 2px solid #333;
+            border-top: none;
+            min-height: 350px;
+        }
+
+        .EasyMDEContainer .editor-toolbar {
+            border: 2px solid #333;
+            border-bottom: 1px solid #ddd;
+            background: #fff;
+        }
+
+        .EasyMDEContainer .editor-toolbar button:hover {
+            background: #333;
+            color: #f8f8f8;
+        }
+
+        .EasyMDEContainer .editor-toolbar button.active {
+            background: #333;
+            color: #f8f8f8;
+        }
+
+        .hidden { display: none; }
+
+        @media (max-width: 768px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.4rem; }
+            .title-input { font-size: 1.1rem; }
+            .editor-actions { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Auth screen -->
+        <div id="auth-screen" class="auth-screen">
+            <h1>blog admin</h1>
+            <p>enter your github personal access token to manage posts.</p>
+            <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxx">
+            <br>
+            <button class="btn btn-primary" onclick="saveToken()">connect</button>
+            <p class="help">
+                need a token? <a href="https://github.com/settings/tokens/new?scopes=repo&description=blog-admin" target="_blank">create one here</a> with "repo" scope.
+            </p>
+        </div>
+
+        <!-- Main app -->
+        <div id="app" class="hidden">
+            <header>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <div class="spacer"></div>
+                <button onclick="showList()">all posts</button>
+                <button onclick="newPost()">+ new post</button>
+                <button onclick="logout()" style="color:#999;border-color:#ccc;">logout</button>
+            </header>
+
+            <!-- Post list view -->
+            <div id="list-view">
+                <h1>posts</h1>
+                <div id="post-list">loading...</div>
+            </div>
+
+            <!-- Editor view -->
+            <div id="editor-view" class="hidden">
+                <div class="editor-section">
+                    <input type="text" id="post-title" class="title-input" placeholder="post title">
+                    <textarea id="editor"></textarea>
+                    <div class="editor-actions">
+                        <button class="btn btn-primary" id="save-btn" onclick="savePost()">publish</button>
+                        <button class="btn btn-secondary" onclick="showList()">cancel</button>
+                    </div>
+                    <div id="status" class="hidden"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+    <script>
+        const REPO_OWNER = 'jberusch';
+        const REPO_NAME = 'jberusch.github.io';
+        const API = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/_posts`;
+
+        let editor = null;
+        let currentFile = null; // { name, sha } when editing existing post
+
+        // --- Auth ---
+
+        function getToken() {
+            return localStorage.getItem('blog_admin_token');
+        }
+
+        function saveToken() {
+            const token = document.getElementById('token-input').value.trim();
+            if (!token) return;
+            localStorage.setItem('blog_admin_token', token);
+            init();
+        }
+
+        function logout() {
+            localStorage.removeItem('blog_admin_token');
+            location.reload();
+        }
+
+        function apiHeaders() {
+            return {
+                'Authorization': `token ${getToken()}`,
+                'Accept': 'application/vnd.github.v3+json'
+            };
+        }
+
+        // --- Init ---
+
+        function init() {
+            if (!getToken()) {
+                document.getElementById('auth-screen').classList.remove('hidden');
+                document.getElementById('app').classList.add('hidden');
+                return;
+            }
+            document.getElementById('auth-screen').classList.add('hidden');
+            document.getElementById('app').classList.remove('hidden');
+            showList();
+        }
+
+        // --- Post List ---
+
+        async function showList() {
+            document.getElementById('list-view').classList.remove('hidden');
+            document.getElementById('editor-view').classList.add('hidden');
+            currentFile = null;
+
+            const listEl = document.getElementById('post-list');
+            listEl.innerHTML = 'loading...';
+
+            try {
+                const res = await fetch(API, { headers: apiHeaders() });
+                if (res.status === 401) {
+                    listEl.innerHTML = 'bad token. <button class="btn btn-secondary" onclick="logout()">try again</button>';
+                    return;
+                }
+                const files = await res.json();
+
+                if (!Array.isArray(files) || files.length === 0) {
+                    listEl.innerHTML = '<p style="color:#888;">no posts yet. click "+ new post" to start.</p>';
+                    return;
+                }
+
+                // Sort newest first
+                files.sort((a, b) => b.name.localeCompare(a.name));
+
+                listEl.innerHTML = files
+                    .filter(f => f.name.endsWith('.md'))
+                    .map(f => {
+                        const match = f.name.match(/^(\d{4}-\d{2}-\d{2})-(.+)\.md$/);
+                        const date = match ? match[1] : '';
+                        const slug = match ? match[2].replace(/-/g, ' ') : f.name;
+                        return `
+                            <div class="post-list-item" onclick="editPost('${f.name}', '${f.sha}')">
+                                <div class="post-info">
+                                    <div class="post-title">${slug}</div>
+                                    <div class="post-date">${date}</div>
+                                </div>
+                                <button class="delete-btn" onclick="event.stopPropagation(); deletePost('${f.name}', '${f.sha}')">delete</button>
+                            </div>`;
+                    }).join('');
+            } catch (err) {
+                listEl.innerHTML = `<p style="color:#c00;">error: ${err.message}</p>`;
+            }
+        }
+
+        // --- Editor ---
+
+        function initEditor(content) {
+            if (editor) {
+                editor.toTextArea();
+                editor = null;
+            }
+
+            document.getElementById('editor').value = content || '';
+
+            editor = new EasyMDE({
+                element: document.getElementById('editor'),
+                spellChecker: false,
+                autofocus: true,
+                status: false,
+                placeholder: 'start writing...',
+                toolbar: [
+                    'bold', 'italic', 'heading', '|',
+                    'quote', 'unordered-list', 'ordered-list', '|',
+                    'link', 'image', '|',
+                    'preview', 'side-by-side', '|',
+                    'guide'
+                ]
+            });
+        }
+
+        function newPost() {
+            currentFile = null;
+            document.getElementById('post-title').value = '';
+            document.getElementById('list-view').classList.add('hidden');
+            document.getElementById('editor-view').classList.remove('hidden');
+            hideStatus();
+            initEditor('');
+        }
+
+        async function editPost(name, sha) {
+            document.getElementById('list-view').classList.add('hidden');
+            document.getElementById('editor-view').classList.remove('hidden');
+            hideStatus();
+
+            try {
+                const res = await fetch(`${API}/${name}`, { headers: apiHeaders() });
+                const file = await res.json();
+                const raw = atob(file.content);
+
+                // Parse frontmatter
+                const fmMatch = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+                let title = '';
+                let body = raw;
+
+                if (fmMatch) {
+                    const fm = fmMatch[1];
+                    const titleMatch = fm.match(/title:\s*"?([^"\n]+)"?/);
+                    if (titleMatch) title = titleMatch[1];
+                    body = fmMatch[2];
+                }
+
+                currentFile = { name, sha: file.sha };
+                document.getElementById('post-title').value = title;
+                initEditor(body.trim());
+            } catch (err) {
+                showStatus(`error loading post: ${err.message}`, 'error');
+            }
+        }
+
+        // --- Save ---
+
+        async function savePost() {
+            const title = document.getElementById('post-title').value.trim();
+            const body = editor.value().trim();
+
+            if (!title) {
+                showStatus('please enter a title.', 'error');
+                return;
+            }
+
+            const saveBtn = document.getElementById('save-btn');
+            saveBtn.disabled = true;
+            saveBtn.textContent = 'saving...';
+
+            const today = new Date().toISOString().split('T')[0];
+            const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+            const filename = currentFile ? currentFile.name : `${today}-${slug}.md`;
+
+            const frontmatter = `---\ntitle: "${title}"\ndate: ${today}\n---\n\n`;
+            const content = frontmatter + body + '\n';
+            const encoded = btoa(unescape(encodeURIComponent(content)));
+
+            const payload = {
+                message: currentFile ? `update post: ${title}` : `new post: ${title}`,
+                content: encoded
+            };
+
+            if (currentFile) {
+                payload.sha = currentFile.sha;
+            }
+
+            try {
+                const res = await fetch(`${API}/${filename}`, {
+                    method: 'PUT',
+                    headers: {
+                        ...apiHeaders(),
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!res.ok) {
+                    const err = await res.json();
+                    throw new Error(err.message || 'github api error');
+                }
+
+                const result = await res.json();
+                currentFile = { name: filename, sha: result.content.sha };
+                showStatus('published! site will rebuild in ~30 seconds.', 'success');
+            } catch (err) {
+                showStatus(`save failed: ${err.message}`, 'error');
+            } finally {
+                saveBtn.disabled = false;
+                saveBtn.textContent = 'publish';
+            }
+        }
+
+        // --- Delete ---
+
+        async function deletePost(name, sha) {
+            if (!confirm(`delete "${name}"?`)) return;
+
+            try {
+                const res = await fetch(`${API}/${name}`, {
+                    method: 'DELETE',
+                    headers: {
+                        ...apiHeaders(),
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: `delete post: ${name}`,
+                        sha: sha
+                    })
+                });
+
+                if (!res.ok) throw new Error('delete failed');
+                showList();
+            } catch (err) {
+                alert(`error: ${err.message}`);
+            }
+        }
+
+        // --- Status ---
+
+        function showStatus(msg, type) {
+            const el = document.getElementById('status');
+            el.className = `status-msg ${type}`;
+            el.textContent = msg;
+            el.classList.remove('hidden');
+        }
+
+        function hideStatus() {
+            document.getElementById('status').classList.add('hidden');
+        }
+
+        // --- Boot ---
+        init();
+    </script>
+</body>
+</html>

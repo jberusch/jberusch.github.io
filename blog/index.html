@@ -1,0 +1,170 @@
+---
+layout: null
+title: "blog"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog - Yo, it's Joe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier Prime', monospace;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            padding: 1.5rem 0;
+        }
+
+        header a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        header a:hover {
+            border: 2px solid #333;
+            background-color: #333;
+            color: #f8f8f8;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            letter-spacing: 0.05em;
+        }
+
+        .post-list {
+            list-style: none;
+        }
+
+        .post-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #333;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .post-item:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .post-item-date {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 0.3rem;
+            letter-spacing: 0.05em;
+        }
+
+        .post-item-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .post-item-title a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .post-item-title a:hover {
+            text-decoration: underline;
+        }
+
+        .post-item-excerpt {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            border-top: 2px solid #333;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .post-item {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/">← home</a>
+        </header>
+
+        <h1>blog</h1>
+
+        {% if site.posts.size > 0 %}
+        <ul class="post-list">
+            {% for post in site.posts %}
+            <li class="post-item">
+                <div class="post-item-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+                <div class="post-item-title">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </div>
+                {% if post.excerpt %}
+                <div class="post-item-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</div>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <div class="empty-state">
+            <p>nothing here yet. check back soon.</p>
+        </div>
+        {% endif %}
+
+        <footer>
+            <p>&copy; 2025 Joe.</p>
+        </footer>
+    </div>
+</body>
+</html>
