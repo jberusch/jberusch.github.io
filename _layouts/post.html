@@ -339,7 +339,7 @@
         </div>
         {% endif %}
         <div class="post-meta">
-          <span class="blue">{{ page.date | date: "%b %-d &middot; %Y" | upcase }}</span>
+          <span class="blue">{{ page.date | date: "%b %-d" | upcase }} &middot; {{ page.date | date: "%Y" }}</span>
           <span>{{ content | number_of_words }} WORDS</span>
         </div>
         <h1 class="post-title">{{ page.title }}</h1>
