@@ -336,14 +336,15 @@ layout: null
             <div class="top-nav">
                 <a href="/" class="zine-name">DISPATCHES</a>
                 <div class="spacer"></div>
-                <button onclick="showList()">all posts</button>
+                <button onclick="showList('posts')">all posts</button>
+                <button onclick="showList('drafts')">drafts</button>
                 <button onclick="newPost()">+ new post</button>
                 <button onclick="logout()" class="logout-btn">logout</button>
             </div>
 
             <!-- Post list view -->
             <div id="list-view">
-                <h1>Posts</h1>
+                <h1 id="list-heading">Posts</h1>
                 <div id="post-list">loading...</div>
             </div>
 
@@ -354,8 +355,9 @@ layout: null
                     <input type="text" id="post-tags" class="tags-input" placeholder="tags (comma separated, e.g. notebook, climbing, music)">
                     <textarea id="editor"></textarea>
                     <div class="editor-actions">
-                        <button class="btn btn-primary" id="save-btn" onclick="savePost()">&#9670; publish</button>
-                        <button class="btn btn-secondary" onclick="showList()">cancel</button>
+                        <button class="btn btn-primary" id="save-btn" onclick="savePost(false)">&#9670; publish</button>
+                        <button class="btn btn-secondary" id="draft-btn" onclick="savePost(true)">save to drafts</button>
+                        <button class="btn btn-secondary" onclick="showList(currentFolder || 'posts')">cancel</button>
                     </div>
                     <div id="status" class="hidden"></div>
                 </div>
@@ -365,14 +367,27 @@ layout: null
 
     <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
     <script>
+        // Dev-only: optional local token file (gitignored, not present in prod).
+        // document.write injects synchronously so DEV_GITHUB_TOKEN is set before init runs.
+        var IS_DEV = ['localhost', '127.0.0.1'].includes(location.hostname);
+        if (IS_DEV) document.write('<script src="dev-token.js"><\/script>');
+    </script>
+    <script>
         const REPO_OWNER = 'jberusch';
         const REPO_NAME = 'jberusch.github.io';
-        const API = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/_posts`;
+        const REPO_BASE = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents`;
+        const FOLDERS = { posts: '_posts', drafts: '_drafts' };
 
         let editor = null;
-        let currentFile = null;
+        let currentFile = null;   // { name, sha, folder } when editing an existing file
+        let currentFolder = 'posts'; // which list is being shown
+
+        function folderApi(folder) {
+            return `${REPO_BASE}/${FOLDERS[folder]}`;
+        }
 
         function getToken() {
+            if (IS_DEV && window.DEV_GITHUB_TOKEN) return window.DEV_GITHUB_TOKEN;
             return localStorage.getItem('blog_admin_token');
         }
 
@@ -403,45 +418,57 @@ layout: null
             }
             document.getElementById('auth-screen').classList.add('hidden');
             document.getElementById('app').classList.remove('hidden');
-            showList();
+            showList('posts');
         }
 
-        async function showList() {
+        async function showList(folder) {
+            folder = folder || 'posts';
+            currentFolder = folder;
             document.getElementById('list-view').classList.remove('hidden');
             document.getElementById('editor-view').classList.add('hidden');
+            document.getElementById('list-heading').textContent = folder === 'drafts' ? 'Drafts' : 'Posts';
             currentFile = null;
 
             const listEl = document.getElementById('post-list');
             listEl.innerHTML = 'loading...';
 
+            const emptyMsg = folder === 'drafts'
+                ? 'no drafts. save one from the editor.'
+                : 'no posts yet. click "+ new post" to start.';
+
             try {
-                const res = await fetch(API, { headers: apiHeaders() });
+                const res = await fetch(folderApi(folder), { headers: apiHeaders() });
                 if (res.status === 401) {
                     listEl.innerHTML = 'bad token. <button class="btn btn-secondary" onclick="logout()">try again</button>';
                     return;
                 }
+                if (res.status === 404) {
+                    // folder doesn't exist yet (e.g. no drafts ever saved)
+                    listEl.innerHTML = `<p style="opacity:0.5;">${emptyMsg}</p>`;
+                    return;
+                }
                 const files = await res.json();
 
-                if (!Array.isArray(files) || files.length === 0) {
-                    listEl.innerHTML = '<p style="opacity:0.5;">no posts yet. click "+ new post" to start.</p>';
+                const mdFiles = Array.isArray(files) ? files.filter(f => f.name.endsWith('.md')) : [];
+                if (mdFiles.length === 0) {
+                    listEl.innerHTML = `<p style="opacity:0.5;">${emptyMsg}</p>`;
                     return;
                 }
 
-                files.sort((a, b) => b.name.localeCompare(a.name));
+                mdFiles.sort((a, b) => b.name.localeCompare(a.name));
 
-                listEl.innerHTML = files
-                    .filter(f => f.name.endsWith('.md'))
+                listEl.innerHTML = mdFiles
                     .map(f => {
                         const match = f.name.match(/^(\d{4}-\d{2}-\d{2})-(.+)\.md$/);
                         const date = match ? match[1] : '';
-                        const slug = match ? match[2].replace(/-/g, ' ') : f.name;
+                        const slug = (match ? match[2] : f.name.replace(/\.md$/, '')).replace(/-/g, ' ');
                         return `
-                            <div class="post-list-item" onclick="editPost('${f.name}', '${f.sha}')">
+                            <div class="post-list-item" onclick="editPost('${f.name}', '${f.sha}', '${folder}')">
                                 <div class="post-info">
                                     <div class="post-title">${slug}</div>
                                     <div class="post-date">${date}</div>
                                 </div>
-                                <button class="delete-btn" onclick="event.stopPropagation(); deletePost('${f.name}', '${f.sha}')">delete</button>
+                                <button class="delete-btn" onclick="event.stopPropagation(); deletePost('${f.name}', '${f.sha}', '${folder}')">delete</button>
                             </div>`;
                     }).join('');
             } catch (err) {
@@ -483,13 +510,14 @@ layout: null
             initEditor('');
         }
 
-        async function editPost(name, sha) {
+        async function editPost(name, sha, folder) {
+            folder = folder || 'posts';
             document.getElementById('list-view').classList.add('hidden');
             document.getElementById('editor-view').classList.remove('hidden');
             hideStatus();
 
             try {
-                const res = await fetch(`${API}/${name}`, { headers: apiHeaders() });
+                const res = await fetch(`${folderApi(folder)}/${name}`, { headers: apiHeaders() });
                 const file = await res.json();
                 const raw = atob(file.content);
 
@@ -507,7 +535,7 @@ layout: null
                     body = fmMatch[2];
                 }
 
-                currentFile = { name, sha: file.sha };
+                currentFile = { name, sha: file.sha, folder };
                 document.getElementById('post-title').value = title;
                 document.getElementById('post-tags').value = tags;
                 initEditor(body.trim());
@@ -516,7 +544,7 @@ layout: null
             }
         }
 
-        async function savePost() {
+        async function savePost(asDraft) {
             const title = document.getElementById('post-title').value.trim();
             const tagsRaw = document.getElementById('post-tags').value.trim();
             const body = editor.value().trim();
@@ -527,12 +555,26 @@ layout: null
             }
 
             const saveBtn = document.getElementById('save-btn');
+            const draftBtn = document.getElementById('draft-btn');
             saveBtn.disabled = true;
-            saveBtn.textContent = 'saving...';
+            draftBtn.disabled = true;
+            const activeBtn = asDraft ? draftBtn : saveBtn;
+            const activeOriginal = activeBtn.textContent;
+            activeBtn.textContent = 'saving...';
 
             const today = new Date().toISOString().split('T')[0];
             const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-            const filename = currentFile ? currentFile.name : `${today}-${slug}.md`;
+            const targetFolder = asDraft ? 'drafts' : 'posts';
+
+            // Determine target filename:
+            // - if editing the same file in the same folder, keep its name
+            // - otherwise, generate: drafts use `slug.md`, posts use `YYYY-MM-DD-slug.md`
+            let filename;
+            if (currentFile && currentFile.folder === targetFolder) {
+                filename = currentFile.name;
+            } else {
+                filename = asDraft ? `${slug}.md` : `${today}-${slug}.md`;
+            }
 
             const tags = tagsRaw ? tagsRaw.split(',').map(t => `"${t.trim()}"`).join(', ') : '';
             let frontmatter = `---\ntitle: "${title}"\ndate: ${today}\n`;
@@ -542,17 +584,23 @@ layout: null
             const content = frontmatter + body + '\n';
             const encoded = btoa(unescape(encodeURIComponent(content)));
 
+            const movingFolders = currentFile && currentFile.folder !== targetFolder;
+            const action = asDraft
+                ? (currentFile ? (movingFolders ? 'unpublish' : 'update draft') : 'new draft')
+                : (currentFile ? (movingFolders ? 'publish' : 'update post') : 'new post');
+
             const payload = {
-                message: currentFile ? `update post: ${title}` : `new post: ${title}`,
+                message: `${action}: ${title}`,
                 content: encoded
             };
 
-            if (currentFile) {
+            // Only include sha if overwriting the same file in the same folder
+            if (currentFile && !movingFolders) {
                 payload.sha = currentFile.sha;
             }
 
             try {
-                const res = await fetch(`${API}/${filename}`, {
+                const res = await fetch(`${folderApi(targetFolder)}/${filename}`, {
                     method: 'PUT',
                     headers: {
                         ...apiHeaders(),
@@ -567,34 +615,59 @@ layout: null
                 }
 
                 const result = await res.json();
-                currentFile = { name: filename, sha: result.content.sha };
-                showStatus('published! site will rebuild in ~30 seconds.', 'success');
+
+                // If we moved folders, delete the old file.
+                if (movingFolders) {
+                    const delRes = await fetch(`${folderApi(currentFile.folder)}/${currentFile.name}`, {
+                        method: 'DELETE',
+                        headers: {
+                            ...apiHeaders(),
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            message: `remove from ${FOLDERS[currentFile.folder]}: ${title}`,
+                            sha: currentFile.sha
+                        })
+                    });
+                    if (!delRes.ok) {
+                        const err = await delRes.json();
+                        throw new Error(`saved new copy but failed to remove old: ${err.message}`);
+                    }
+                }
+
+                currentFile = { name: filename, sha: result.content.sha, folder: targetFolder };
+                const successMsg = asDraft
+                    ? 'saved to drafts.'
+                    : (movingFolders ? 'published! site will rebuild in ~30 seconds.' : 'published! site will rebuild in ~30 seconds.');
+                showStatus(successMsg, 'success');
             } catch (err) {
                 showStatus(`save failed: ${err.message}`, 'error');
             } finally {
                 saveBtn.disabled = false;
-                saveBtn.textContent = '◆ publish';
+                draftBtn.disabled = false;
+                activeBtn.textContent = activeOriginal;
             }
         }
 
-        async function deletePost(name, sha) {
+        async function deletePost(name, sha, folder) {
+            folder = folder || 'posts';
             if (!confirm(`delete "${name}"?`)) return;
 
             try {
-                const res = await fetch(`${API}/${name}`, {
+                const res = await fetch(`${folderApi(folder)}/${name}`, {
                     method: 'DELETE',
                     headers: {
                         ...apiHeaders(),
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        message: `delete post: ${name}`,
+                        message: `delete ${folder === 'drafts' ? 'draft' : 'post'}: ${name}`,
                         sha: sha
                     })
                 });
 
                 if (!res.ok) throw new Error('delete failed');
-                showList();
+                showList(folder);
             } catch (err) {
                 alert(`error: ${err.message}`);
             }

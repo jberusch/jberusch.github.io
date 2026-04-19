@@ -1,0 +1,4 @@
+// Copy this file to `dev-token.js` for local dev auto-login.
+// `dev-token.js` is gitignored so your token never hits git.
+// Used only when the admin page loads on localhost / 127.0.0.1.
+window.DEV_GITHUB_TOKEN = 'ghp_paste_your_token_here';
