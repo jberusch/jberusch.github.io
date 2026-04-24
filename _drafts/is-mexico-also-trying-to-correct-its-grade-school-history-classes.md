@@ -14,7 +14,7 @@ The question sent me down a fascinating internet rabbit hole that has given me s
 
 ### No, they're not rewriting it.
 
-Mexican scholrs aren't fighting to alter their origin story because, apparently, the country's narrative has long been one of Conquest as Catastrophe. In other words: Indigenous Good, Spain evil, Cuauhtémoc hero, Cortes villain. At least, that's true since the Mexican Revolution ended in 1920.
+Mexican scholrs aren't fighting to alter their origin story because, apparently, the country's narrative has long been one of Conquest as Catastrophe. In other words: Indigenous Good, Spain evil, CuauhtÃ©moc hero, Cortes villain. At least, that's true since the Mexican Revolution ended in 1920.
 
 ### Wait, there was a Mexican Revolution in the 1900s?
 
@@ -24,4 +24,10 @@ At this point in the search, I became confused, then embarrassed. I was confused
 
 Putting aside the Mexican Revolution (and the myriad failures of my education), it seems that, after the Revolution, the new Mexican government made a significant effort to rebrand all Mexicans under the "mestizaje" concept: a mix of European and indigenous culture and heritage. From Wikipedia:
 
-> A survey done by Latinobarometro in 2018 found that around 58% of Mexicans self-identify as mestizos when asked about their race, and another survey by Cohesión Social found that over 70% of Mexicans identified as mixed-race.
+> A survey done by Latinobarometro in 2018 found that around 58% of Mexicans self-identify as mestizos when asked about their race, and another survey by CohesiÃ³n Social found that over 70% of Mexicans identified as mixed-race.
+
+By positionining themselves as a fusion of conquerers and conquered, Mexicans can claim the spoils of the winners (i.e. the land) and the moral standing of the victims. The Spanish are at fault, not the descendents from the conquerers-who-stayed.
+
+Although, there's some basis for that. Conquistadors came in small numbers and overwhelmingly male. While they may have fathered some children through loving, consensual bonds, it's almost certain that the majority were results of coercion and/or rape.
+
+At the same time, the criollos -- pure Spanish-descended, born in Mexico -- held significant power in Mexico, taking over the haciendas, land concentration, and labor exploitation directly from the conquistadors. Many of Mexico's actions, including the war for independence from Spain, were heavily influenced by the criollos.
