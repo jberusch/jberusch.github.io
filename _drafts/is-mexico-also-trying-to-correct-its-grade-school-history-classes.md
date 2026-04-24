@@ -1,6 +1,7 @@
 ---
 title: "is mexico also trying to correct its grade-school history classes?"
-date: 2026-04-23
+date: 2026-04-24
+tags: ["history", "self-learning"]
 ---
 
 I just finished listening to the sensational 8-part series on the Fall of the Aztecs by The Rest is History podcast. It blew my mind.
