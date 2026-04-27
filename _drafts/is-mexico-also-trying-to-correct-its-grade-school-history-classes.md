@@ -1,6 +1,6 @@
 ---
 title: "is mexico also trying to correct its grade-school history classes?"
-date: 2026-04-24
+date: 2026-04-27
 tags: ["history", "self-learning"]
 ---
 
