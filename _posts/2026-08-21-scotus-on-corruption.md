@@ -3,16 +3,16 @@ title: "SCOTUS on Corruption"
 date: 2026-08-21
 ---
 
-> Ã¢ÂÂWhere enough money calls the tune, the general public will not be heard. Insofar as corruption cuts the link between political thought and political action, a free marketplace of political ideas loses its point. That is one reason why the Court has stressed the constitutional importance of CongressÃ¢ÂÂ concern that a few large donations not drown out the voices of the many.Ã¢ÂÂ
+> Where enough money calls the tune, the general public will not be heard. Insofar as corruption cuts the link between political thought and political action, a free marketplace of political ideas loses its point. That is one reason why the Court has stressed the constitutional importance of Congress concern that a few large donations not drown out the voices of the many.
 -- Justice Stephen Breyer, McCutcheon v. FEC
 
-The U.S. Supreme Court claims its rulings on money in politics prevent even the Ã¢ÂÂappearance of corruption.Ã¢ÂÂ Based on polls from Pew, Politico, and the Brennan Center, it looks like they failed.
+The U.S. Supreme Court claims its rulings on money in politics prevent even the "appearance of corruption. Based on polls from Pew, Politico, and the Brennan Center, it looks like they failed.
 
-More than 9 in 10 voters believe corruption is Ã¢ÂÂa big problem.Ã¢ÂÂ 94% think that prioritizing the interests of billionaires and big corporations counts as a form of corruption, and 64% identify campaign contributions from billionaires as a top cause of corruption (Brennan Center for Justice, poll of 2,000 registered voters, April 28âMay 6, 2026).
+More than 9 in 10 voters believe corruption is "a big problem." 94% think that prioritizing the interests of billionaires and big corporations counts as a form of corruption, and 64% identify campaign contributions from billionaires as a top cause of corruption (Brennan Center for Justice, poll of 2,000 registered voters, April 28 - May 6, 2026).
 
-One can easily guess why Congress and past presidents havenÃ¢ÂÂt regulated the issue -- they benefit from exploiting it. But, over the last 50 years, itÃ¢ÂÂs actually been the Supreme Court -- the body with the least to gain -- doing the most to narrow anti-corruption law.
+One can easily guess why Congress and past presidents haven"t regulated the issue -- they benefit from exploiting it. But, over the last 50 years, it's actually been the Supreme Court -- the body with the least to gain -- doing the most to narrow anti-corruption law.
 
-In this essay, IÃ¢ÂÂll take you through the landmark decisions in that vein. IÃ¢ÂÂll show how the Court repeatedly used three key assumptions -- money as speech, *quid pro quo* corruption being the only compelling issue, and err on the side of protecting speech whenever in doubt -- to strip regulations and further sow seeds of distrust in the electorate.
+In this essay, I'll take you through the landmark decisions in that vein. I'll show how the Court repeatedly used three key assumptions -- money as speech, *quid pro quo* corruption being the only compelling issue, and err on the side of protecting speech whenever in doubt -- to strip regulations and further sow seeds of distrust in the electorate.
 
 ## Watergate and the FECA Amendments
 The 1974 Watergate scandal motivated politicians to make it harder for money to influence politics and corrupt politicians.
@@ -112,7 +112,7 @@ In addition to rebutting the CourtÃ¢ÂÂs logical argument, Kagan also cit
 
 Two years later, a similar case of repayment after-the-fact made it to the Supreme Court.
 
-## *Snyder v. United States* Ã¢ÂÂ differentiating between gratuity and bribe
+## *Snyder v. United States* -- differentiating between gratuity and bribe
 James Snyder, former mayor of Portage, Indiana, was convicted after steering more than $1 million in city contracts to a local truck dealership, which then paid him $13,000. Despite SnyderÃ¢ÂÂs argument that the payment was a Ã¢ÂÂconsulting fee,Ã¢ÂÂ two juries convicted him. In *Snyder v. United States* (2024), the Supreme Court overturned the juryÃ¢ÂÂs decision.
 
 Specifically, the Court ruled that the anti-corruption law used to convict Snyder (ÃÂ§ 666) didnÃ¢ÂÂt apply. According to Kavanaugh, the law was a bribery statute, whereas what Snyder got was a gratuity. He claims that Ã¢ÂÂunlike gratuities, bribes can corrupt the official act.Ã¢ÂÂ The CourtÃ¢ÂÂs argument here -- that corruption requires explicit prior agreement for the *quid pro quo* exchange -- harkens back to KaganÃ¢ÂÂs dissent in *FEC v. Cruz*. They again restrict corruption only to scenarios that Ã¢ÂÂare nigh-impossible to detect and proveÃ¢ÂÂ¦Ã¢ÂÂ
@@ -126,4 +126,4 @@ Recall that, way back when this story started in *Buckley v. Valeo*, the Supreme
 
 Appearance is a question about what the public believes to be true. The *Buckley* decision explicitly states that the goal is to preserve the publicÃ¢ÂÂs Ã¢ÂÂconfidence in the system of representative government.Ã¢ÂÂ However, the Supreme Court has never measured what the public believes, or even accepted any evidence submitted on that topic. Instead, the Court has asserted their assumption, as Kennedy does in Citizens United: Ã¢ÂÂ[the appearance of influence or access] will not cause the electorate to lose faith in democracy.Ã¢ÂÂ
 
-While the Court hasnÃ¢ÂÂt sought data on AmericansÃ¢ÂÂ perception of political influence, numerous polls have. Many of the findings are damning for the CourtÃ¢ÂÂs argument, though one most of all: 89% of voters say that billionaires and big corporations having an easier time being heard than the general public is corruption. Not bribery, not quid pro quo -- being heard is enough. While the Court may argue doctrinally that Ã¢ÂÂingratiation and access, in any event, are not corruption,Ã¢ÂÂ the public disagrees. And ultimately, according to the precedent the Court has left standing for 50 years, the public opinion is the one that matters.
+While the Court hasnÃ¢ÂÂt sought data on AmericansÃ¢ÂÂ perception of political influence, numerous polls have. Many of the findings are damning for the CourtÃ¢ÂÂs argument, though one most of all: 89% of voters say that billionaires and big corporations having an easier time being heard than the general public is corruption. Not bribery, not quid pro quo -- being heard is enough. While the Court may argue doctrinally that "ingratiation and access, in any event, are not corruption, the public disagrees. And ultimately, according to the precedent the Court has left standing for 50 years, the public opinion is the one that matters.
