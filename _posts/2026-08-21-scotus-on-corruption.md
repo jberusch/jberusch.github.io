@@ -12,17 +12,17 @@ More than 9 in 10 voters believe corruption is “a big problem.” 94% think th
 
 One can easily guess why Congress and past presidents haven’t regulated the issue -- they benefit from exploiting it. But, over the last 50 years, it’s actually been the Supreme Court -- the body with the least to gain -- doing the most to narrow anti-corruption law.
 
-In this essay, I’ll take you through the landmark decisions in that vein. I’ll show how the Court repeatedly used three key assumptions -- money as speech, quid pro quo corruption being the only compelling issue, and err on the side of protecting speech whenever in doubt -- to strip regulations and further sow seeds of distrust in the electorate.
+In this essay, I’ll take you through the landmark decisions in that vein. I’ll show how the Court repeatedly used three key assumptions -- money as speech, *quid pro quo* corruption being the only compelling issue, and err on the side of protecting speech whenever in doubt -- to strip regulations and further sow seeds of distrust in the electorate.
 
 ### Watergate and the FECA Amendments
 The 1974 Watergate scandal motivated politicians to make it harder for money to influence politics and corrupt politicians.
 
 The same year Nixon resigned in scandal, President Ford signed into law a series of amendments to the original 1971 Federal Election Campaign Act (FECA). Put simply, the 1974 FECA amendments imposed limits on both sides of the money problem: limits on how much an individual could give to a campaign, and limits on how much a campaign — or an independent wealthy individual — could spend in an election.
 
-With bipartisan opposition to a slew of the FECA regulations, a case against the new law was fast-tracked to the Supreme Court, where it ended up as Buckley v. Valeo.
+With bipartisan opposition to a slew of the FECA regulations, a case against the new law was fast-tracked to the Supreme Court, where it ended up as *Buckley v. Valeo*.
 
-### Buckley v. Valeo — to cap spending is to cap the quantity of expression
-Buckley v. Valeo (1976) begins two key arguments, which lay the groundwork for all the cases that follow:
+### *Buckley v. Valeo* — to cap spending is to cap the quantity of expression
+*Buckley v. Valeo* (1976) begins two key arguments, which lay the groundwork for all the cases that follow:
 1. Spending limits are equivalent to speech limits. It’s fine that some people get to “speak” more than others.
 2. If a donor doesn’t prearrange or coordinate with a candidate when they spend money to get them elected, it’s less likely to corrupt.
 
@@ -34,47 +34,49 @@ The Court clarified that, while political spending is unlimited, giving is diffe
 
 So, the Court decides it’s fine to stop rich donors giving large sums directly to a candidate’s campaign, but what about rich donors spending large sums to get a politician elected? Say, for example, that a rich donor who would have given $50M to a campaign instead spends that money running ads on behalf of the candidate? Surely this money could have the same corrupting effect, since the only key difference is that the ads were paid for by a separate org, rather than by the candidate’s campaign itself?
 
-The Court decides otherwise: “The absence of prearrangement and coordination of an expenditure with the candidate or his agent not only undermines the value of the expenditure to the candidate, but also alleviates the danger that expenditures will be given as a quid pro quo for improper commitments from the candidate.” In other words, if the wealthy donor isn’t explicitly coordinating with the candidate, their spending is less likely to influence the candidate and they’re less likely to reap any corrupt rewards in return. (For a hilarious illustration of how limited the definition of “coordinating” is, watch Jon Stewart discuss his plans for Stephen Colbert’s Super PAC).
+The Court decides otherwise: “The absence of prearrangement and coordination of an expenditure with the candidate or his agent not only undermines the value of the expenditure to the candidate, but also alleviates the danger that expenditures will be given as a quid pro quo for improper commitments from the candidate.” In other words, if the wealthy donor isn’t explicitly coordinating with the candidate, their spending is less likely to influence the candidate and they’re less likely to reap any corrupt rewards in return. (For a hilarious illustration of how limited the definition of “coordinating” is, watch Jon Stewart [discuss his plans](https://youtu.be/c8Lzo1n8-mY?si=g_faPgwtQYmXxdJu&t=20) for Stephen Colbert’s Super PAC).
 
-Corruption can take many forms. In Buckley, the Court names quid pro quo corruption as a concern, but focuses more broadly on anticorruption as a whole. Nine years later, the Court began to contract that definition.
+Corruption can take many forms. In *Buckley*, the Court names quid pro quo corruption as a concern, but focuses more broadly on anticorruption as a whole. Nine years later, the Court began to contract that definition.
 
-### FEC v. NCPAC — the hallmark of corruption is the financial quid pro quo
-While Buckley struck the caps on independent spending by individuals, it left the $1,000 cap on independent spending by PACs (Political Action Committees) in place. In FEC v. NCPAC, the Court struck the cap for PACs too, ruling they could also spend an unlimited amount, specifically for publicly-financed presidential election candidates. The majority’s ruling followed similar lines as Buckley -- independent spending doesn’t provide a significant enough threat of corruption, or the appearance of corruption, to allow the government to limit it.
+### *FEC v. NCPAC* — the hallmark of corruption is the financial quid pro quo
+While *Buckley* struck the caps on independent spending by individuals, it left the $1,000 cap on independent spending by PACs (Political Action Committees) in place. In *FEC v. NCPAC*, the Court struck the cap for PACs too, ruling they could also spend an unlimited amount, specifically for publicly-financed presidential election candidates. The majority’s ruling followed similar lines as Buckley -- independent spending doesn’t provide a significant enough threat of corruption, or the appearance of corruption, to allow the government to limit it.
 
 In the midst of the ruling, Justice William Rehnquist writes a now-famous line: “The hallmark of corruption is the financial quid pro quo: dollars for political favors.” In context, the sentence is purely explanatory. Before it, Rehnquist explains that corruption is a much broader category than solely quid pro quo: “Corruption is a subversion of the political process. Elected officials are influenced to act contrary to their obligations of office by the prospect of financial gain to themselves or infusions of money into their campaigns.”
 
-Thirty years later, this line will become a crucial tool for the Roberts Court to contract the definition of corruption yet further, in McCutcheon v. FEC. But before McCutcheon, we first go to the one campaign finance case you’ve almost certainly heard of: Citizens United.
+Thirty years later, this line will become a crucial tool for the Roberts Court to contract the definition of corruption yet further, in *McCutcheon v. FEC*. But before *McCutcheon*, we first go to the one campaign finance case you’ve almost certainly heard of: *Citizens United*.
 
-### Citizens United v. FEC — corporations get unlimited spending
-In 2010, the Roberts Court picked up the baton from Rehnquist and expanded both Buckley and FEC v. NCPAC far beyond both. Specifically, the Court ruled that the government can’t limit spending by any corporation, union, or non-profit who wants to publish election messaging.
+### *Citizens United v. FEC* — corporations get unlimited spending
+In 2010, the Roberts Court picked up the baton from Rehnquist and expanded both *Buckley* and *FEC v. NCPAC* far beyond both. Specifically, the Court ruled that the government can’t limit spending by any corporation, union, or non-profit who wants to publish election messaging.
 
-To understand why Citizens United was such a seismic shift from FEC v. NCPAC, you have to understand the limitations of a PAC. Political Action Committees can only:
+To understand why Citizens United was such a seismic shift from *FEC v. NCPAC*, you have to understand the limitations of a PAC. Political Action Committees can only:
 * Receive small donations (e.g. $5K) from individual donors. PACs cannot get donations from corporations, unions, or other groups.
 * Give money directly to a politician’s campaign (up to $5K per election).
 * Coordinate with a politician’s campaign.
+
 On the other hand, Citizens United extended unlimited spending to organizations that could raise unlimited funds from any audience and spend however they like (e.g. ads, newsletters, mailers). The only limitation is that the organization can’t coordinate with the campaign, or give money directly to them.
 
-From this decision (together with the late SpeechNow.org v. FEC case) we get the modern “Super PAC.” Interest groups can now raise unlimited funds from wealthy donors, spend that money to influence voters in favor of their preferred politician, then curry favor with the politician whom they help elect.
+From this decision (together with the late *SpeechNow.org v. FEC* case) we get the modern “Super PAC.” Interest groups can now raise unlimited funds from wealthy donors, spend that money to influence voters in favor of their preferred politician, then curry favor with the politician whom they help elect.
 
 While it might seem like that circumstance might lead to corruption, Justice Kennedy, writing for the majority, claims that “independent expenditures, including those made by corporations, do not give rise to corruption or the appearance of corruption.” This claim, central to Citizens United, is interesting for two reasons:
 
 First, Kennedy makes a falsifiable, empirical prediction about public opinion, with no investigation into polling data. If he had, he would have found large majorities of the U.S. electorate consistently believing large donors get unfair benefits.
 
-Second, less than a year before Citizens United, Kennedy wrote for the majority in Caperton v. A.T. Massey Coal, which ruled that a judge was required to recuse himself from a case in which a coal company appealed a $50 million verdict to a court whose newest justice had been elected with ~$3 million in support from that company’s CEO. In that case, Kennedy wrote that, despite there being no evidence of direct bribery or explicit quid pro quo, the “probability of actual bias on the part of the judge … is too high to be constitutionally tolerable.”
+Second, less than a year before *Citizens United*, Kennedy wrote for the majority in *Caperton v. A.T. Massey Coal*, which ruled that a judge was required to recuse himself from a case in which a coal company appealed a $50 million verdict to a court whose newest justice had been elected with ~$3 million in support from that company’s CEO. In that case, Kennedy wrote that, despite there being no evidence of direct bribery or explicit *quid pro quo*, the “probability of actual bias on the part of the judge … is too high to be constitutionally tolerable.”
 
-By extending unlimited independent spending to corporations, Citizens United created a seismic rupture in how money is spent on campaigns. However, it remained in the same domain as the original Buckley and NCPAC cases -- same assumptions, new actor. Over the next few years, the Court extended similar logic to new domains: to giving thresholds (McCutcheon), criminal law (McDonnell), post-election personal enrichment (Cruz), and after-the-fact gratuities (Snyder).
+By extending unlimited independent spending to corporations, Citizens United created a seismic rupture in how money is spent on campaigns. However, it remained in the same domain as the original *Buckley* and *NCPAC* cases -- same assumptions, new actor. Over the next few years, the Court extended similar logic to new domains: to giving thresholds (*McCutcheon*), criminal law (*McDonnell*), post-election personal enrichment (*Cruz*), and after-the-fact gratuities (*Snyder*).
 
-### McCutcheon v. FEC — extending the quid pro quo argument to the giving side
-Before McCutcheon v. FEC (2014), there were two types of limits on what an individual can give directly to a candidate (as opposed to an independent org like a PAC). A base limit capped what you could give to any single candidate. An aggregate limit capped the total you could spread across all candidates and committees combined. In McCutcheon v. FEC, the Court struck the aggregate limit, following similar logic as before: if a maxed-out gift to one candidate isn't corrupting, then a maxed-out gift to four hundred of them isn't either.
+### *McCutcheon v. FEC* — extending the quid pro quo argument to the giving side
+Before *McCutcheon v. FEC* (2014), there were two types of limits on what an individual can give directly to a candidate (as opposed to an independent org like a PAC). A base limit capped what you could give to any single candidate. An aggregate limit capped the total you could spread across all candidates and committees combined. In *McCutcheon v. FEC*, the Court struck the aggregate limit, following similar logic as before: if a maxed-out gift to one candidate isn't corrupting, then a maxed-out gift to four hundred of them isn't either.
 
 Buckley outlined two clear categories of money:
 * Spending: equivalent to speech, unlikely to corrupt, protected under 1st Amendment.
 * Giving: not equivalent to speech, can corrupt, can be regulated.
-McCutcheon blows up this distinction. Specifically, it uses the Court’s previous idea that only quid pro quo spending could corrupt and applies it to giving. They argue that even giving money directly to politicians (rather than spending it on them, as in Citizens United) is unlikely to corrupt, unless there’s a clear bribe at hand.
+
+*McCutcheon* blows up this distinction. Specifically, it uses the Court’s previous idea that only quid pro quo spending could corrupt and applies it to giving. They argue that even giving money directly to politicians (rather than spending it on them, as in Citizens United) is unlikely to corrupt, unless there’s a clear bribe at hand.
 
 > “the only type of corruption that Congress may target is quid pro quo corruption. Spending large sums of money in connection with elections, but not in connection with an effort to control the exercise of an officeholder's official duties, does not give rise to quid pro quo corruption. Nor does the possibility that an individual who spends large sums may garner 'influence over or access to' elected officials or political parties.”
 
-To justify his argument for only considering quid pro quo corruption, Roberts cites the original line from FEC v. NCPAC: “The hallmark of corruption is the financial quid pro quo: dollars for political favors.” However, recall that NCPAC had a much broader definition of corruption: any time where “[e]lected officials are influenced to act contrary to their obligations of office by the prospect of financial gain to themselves or infusions of money into their campaigns.”
+To justify his argument for only considering quid pro quo corruption, Roberts cites the original line from *FEC v. NCPAC*: “The hallmark of corruption is the financial *quid pro quo*: dollars for political favors.” However, recall that NCPAC had a much broader definition of corruption: any time where “elected officials are influenced to act contrary to their obligations of office by the prospect of financial gain to themselves or infusions of money into their campaigns.”
 
 Here, we see how the Court gradually narrows the definition of corruption. In 1985, it’s a general risk of influence; by 2014, it’s limited specifically to preagreed tit-for-tat exchanges between donors and politicians.
 
@@ -82,8 +84,8 @@ Roberts concedes that it’s a gray area: “[t]he line between quid pro quo cor
 
 Two years later, the Court extended these principles even further, beyond the First Amendment.
 
-### McDonnell v. United States — applying the corruption logic to criminal law
-Unlike the rest before it, McDonnell is an issue of criminal law — i.e. who should go to prison — rather than one of what the government may regulate.
+### *McDonnell v. United States* — applying the corruption logic to criminal law
+Unlike the rest before it, *McDonnell* is an issue of criminal law — i.e. who should go to prison — rather than one of what the government may regulate.
 
 Jonnie Williams, CEO of Star Scientific, was marketing Anatabloc, a supplement based on anatabine, a tobacco compound. He wanted studies at UVA and Virginia Commonwealth — public-university research to support FDA approval as a pharmaceutical rather than an unregulated supplement. He gave roughly $175,000 in gifts and loans to Virginia Governor Bob McDonnell, including a Rolex and catering for their daughter’s wedding. McDonnell, for his part, arranged meetings with state officials, hosted a product launch luncheon at the Governor’s mansion, and contacted other officials for Williams. Though the studies never happened because the universities weren’t interested, McDonnell and his wife were convicted for corruption. Two years later, SCOTUS reversed the decision 8-0.
 
@@ -91,14 +93,16 @@ The Court argues that what McDonnell did for Williams wasn’t an “official ac
 
 Chief Justice Roberts writes: “The basic compact underlying representative government assumes that public officials will hear from their constituents and act appropriately on their concerns — whether it is the union official worried about a plant closing or the homeowners who wonder why it took five days to restore power to their neighborhood after a storm.” One might counterargue that these union and homeowner examples is completely different from a wealthy donor asking for introductions for potential business deals, but that argument quickly runs into the ruling from McCutcheon: “...the First Amendment requires us to err on the side of protecting political speech rather than suppressing it.” Even though this case isn’t a First Amendment issue, the Court retains the same logic.
 
-Unlike all the other cases discussed here, McDonnell was unanimous. That Justices Ginsburg, Sotomayor, and Kagan all joined the majority shows that this case was not decided purely by party ideology. The way legal reasoning itself handles this question leads the Court astray from preventing the “appearance of corruption.” The next case in the series, though, was far more political.
-FEC v. Ted Cruz for Senate — when money enriches the politician personally
+Unlike all the other cases discussed here, *McDonnell* was unanimous. That Justices Ginsburg, Sotomayor, and Kagan all joined the majority shows that this case was not decided purely by party ideology. The way legal reasoning itself handles this question leads the Court astray from preventing the “appearance of corruption.” The next case in the series, though, was far more political.
+
+### *FEC v. Ted Cruz* for Senate — when money enriches the politician personally
 You probably knew that politicians can loan money to their own campaigns and that campaigns can accept donations anytime, even after the election. But did you know that politicians can use funds donated after the election to repay themselves? Before 2022, a campaign could repay the loan in full out of pre-election money, but only within 20 days of the election. After that, post-election donations could cover no more than $250,000 of the candidate’s original loan.
 
 Ted Cruz designed a scenario specifically to challenge this limit. He loaned his campaign $260,000 ($10,000 over the $250,000 cap) for a race, let the 20-day window lapse, then repaid himself $250,000 from post-election funds and sued because he couldn’t collect the last $10,000. In a 6-3 decision, the Court struck the $250,000 cap.
 
 In his majority opinion, Roberts takes issue with the FEC’s proposed justification -- that loan repayment encourages corruption -- saying it was “unable to identify a single case of quid pro quo corruption” in this context. Justice Kagan, in her dissent, counterargues that the government shouldn’t need to prove evidence of corruption beyond a reasonable doubt just to regulate something any normal person can see might lead to corruption:
 > “The majority suggests that we should discard our understanding of how the world works because the Government has not come forward with adjudicated instances of corruption in the loan-repayment context. But quid pro quo exchanges … are nigh-impossible to detect and prove… They prohibit conduct posing a heightened risk of corruption, so that the Government does not have to ferret out illicit exchanges case by case by case. To strike down Section 304 because the Government has not proved to a certainty some number of loan-repayments-for-political-paybacks is to miss the provision’s essential point” (emphasis added).
+
 Kagan’s point here is key. It rebuts not just this decision, but the Court’s entire definition of “corruption” that it’s been building since Buckley:
 
 Kagan goes on to plainly illustrate the risk:
@@ -108,18 +112,18 @@ In addition to rebutting the Court’s logical argument, Kagan also cites specif
 
 Two years later, a similar case of repayment after-the-fact made it to the Supreme Court.
 
-### Snyder v. United States — differentiating between gratuity and bribe
-James Snyder, former mayor of Portage, Indiana, was convicted after steering more than $1 million in city contracts to a local truck dealership, which then paid him $13,000. Despite Snyder’s argument that the payment was a “consulting fee,” two juries convicted him. In Snyder v. United States (2024), the Supreme Court overturned the jury’s decision.
+### *Snyder v. United States* — differentiating between gratuity and bribe
+James Snyder, former mayor of Portage, Indiana, was convicted after steering more than $1 million in city contracts to a local truck dealership, which then paid him $13,000. Despite Snyder’s argument that the payment was a “consulting fee,” two juries convicted him. In *Snyder v. United States* (2024), the Supreme Court overturned the jury’s decision.
 
-Specifically, the Court ruled that the anti-corruption law used to convict Snyder (§ 666) didn’t apply. According to Kavanaugh, the law was a bribery statute, whereas what Snyder got was a gratuity. He claims that “unlike gratuities, bribes can corrupt the official act.” The Court’s argument here -- that corruption requires explicit prior agreement for the quid pro quo exchange -- harkens back to Kagan’s dissent in FEC v. Cruz. They again restrict corruption only to scenarios that “are nigh-impossible to detect and prove…”
+Specifically, the Court ruled that the anti-corruption law used to convict Snyder (§ 666) didn’t apply. According to Kavanaugh, the law was a bribery statute, whereas what Snyder got was a gratuity. He claims that “unlike gratuities, bribes can corrupt the official act.” The Court’s argument here -- that corruption requires explicit prior agreement for the *quid pro quo* exchange -- harkens back to Kagan’s dissent in *FEC v. Cruz*. They again restrict corruption only to scenarios that “are nigh-impossible to detect and prove…”
 
 In an incisive dissent, Justice Jackson appears to allude (though unverified) to the recent money scandals with Justices Alito and Thomas when she rebuts:
 > “Snyder’s absurd and atextual reading of the statute is one only today’s Court could love. Ignoring the plain text of §666—which, again, expressly targets officials who “corruptly” solicit, accept, or agree to accept payments “intending to be influenced or rewarded” — the Court concludes that the statute does not criminalize gratuities at all.”
 
 
 ### The Court takes an empiric question, and makes it abstract
-Way back when this story started, in Buckley v. Valeo, recall that the Supreme Court placed high importance on preventing not just corruption, but the appearance of corruption as well. The Court recognized that, even though it’s hard to draw the line between corruption and not, the very appearance itself could cause the electorate to lose faith in the political process, and that the government had a justified interest in preserving that faith. In all their rulings since, the Court has left this standard intact.
+Recall that, way back when this story started in *Buckley v. Valeo*, the Supreme Court placed high importance on preventing not just corruption, but the appearance of corruption as well. The Court recognized that, even though it’s hard to draw the line between corruption and not, the very appearance itself could cause the electorate to lose faith in the political process, and that the government had a justified interest in preserving that faith. In all their rulings since, the Court has left this standard intact.
 
-Appearance is a question about what the public believes to be true. The Buckley decision explicitly states that the goal is to preserve the public’s “confidence in the system of representative government.” However, the Supreme Court has never measured what the public believes, or even accepted any evidence submitted on that topic. Instead, the Court has asserted their assumption, as Kennedy does in Citizens United: “[the appearance of influence or access] will not cause the electorate to lose faith in democracy.”
+Appearance is a question about what the public believes to be true. The *Buckley* decision explicitly states that the goal is to preserve the public’s “confidence in the system of representative government.” However, the Supreme Court has never measured what the public believes, or even accepted any evidence submitted on that topic. Instead, the Court has asserted their assumption, as Kennedy does in Citizens United: “[the appearance of influence or access] will not cause the electorate to lose faith in democracy.”
 
 While the Court hasn’t sought data on Americans’ perception of political influence, numerous polls have. Many of the findings are damning for the Court’s argument, though one most of all: 89% of voters say that billionaires and big corporations having an easier time being heard than the general public is corruption. Not bribery, not quid pro quo -- being heard is enough. While the Court may argue doctrinally that “ingratiation and access, in any event, are not corruption,” the public disagrees. And ultimately, according to the precedent the Court has left standing for 50 years, the public opinion is the one that matters.
