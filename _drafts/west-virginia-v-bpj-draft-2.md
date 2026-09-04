@@ -20,7 +20,9 @@ BPJ is a trans girl; in the legal system, we use initialed pseudonyms for minors
 
 According to the law, "biological males" can't compete in women’s sports. I believe the preferred term is AMAB (Assigned Male at Birth), but please do correct me if I'm wrong. The law defines sex "solely on the individual's reproductive biology and genetics at birth," which they look at your birth certificate to find out. This question of how sex is defined turns out to be way more interesting and relevant than I thought -- we'll come back to this later.
 
-Before getting into the arguments, there's one crucial piece of legal-speak to understand. When you bring a case to the Court and argue that a law is unconstitutional, you can do it in two ways:
+Before getting into the arguments, there's one key piece of lawyer-speak understand. When you bring a case to the Court and argue that a law is unconstitutional, you can do it in two ways:
 1. An *as applied* challenge, where you argue that the law is unconstitutional specifically as it's applied to you in this case, or
 2. A *facial* challenge, where you argue the law is unconstitutional on its face, in all cases.
-BPJ challenges this law *as it's applied to her".
+BPJ challenges this law specifically ***as it's applied to her***.
+
+Why would she do that, you ask? BPJ started her transition in 3rd grade, so she *never underwent male puberty*. So, she argues, if the whole point of the law is not to preserve women's sports as a safe space for women to compete against on a level playing field, surely it shouldn't apply to her? Maybe the law *could* make sense in other cases, but she has no biological advantage!
