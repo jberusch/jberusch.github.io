@@ -26,3 +26,15 @@ Before getting into the arguments, there's one key piece of lawyer-speak underst
 BPJ challenges this law specifically ***as it's applied to her***.
 
 Why would she do that, you ask? BPJ started her transition in 3rd grade, so she *never underwent male puberty*. So, she argues, if the whole point of the law is not to preserve women's sports as a safe space for women to compete against on a level playing field, surely it shouldn't apply to her? Maybe the law *could* make sense in other cases, but she has no biological advantage!
+
+### the ruling
+The Court decies, in a 6-3 majority, that West Virginia can block BPJ from competing in any women's sports. 
+
+Pause.
+
+Supreme Court cases can be a lot like Wikipedia rabbit holes. I start out with a specific question, then I get hooked on another question, then another, and before I know it I've skimmed 20 sections of 15 different Wikipedia sections and -- while I certainly had fun -- I'm not sure what exactlty I learned? Since I'm not legal scholar, reading these cases is a fascinating series of rabbit holes. Every claim, footnote, and citation is hours of research for me to explore. But I don't want you to lose the plot, so I think it's important to start at the end:
+
+I believe sports are an important part of childhood. Check out this quote:
+> Participation in sports has enabled countless American women and girls to be on a team, to take part in the human drama of athletic competition, to overcome the agony of defeat and know the thrill of victory. And those lessons and experiences in sports have empowered millions of American women who have gone on to thrive in all aspects of American life.
+
+That paragraph is from Justice Brett Kavanaugh himself, from this very majority opinion, *West Virginia v. BPJ*.
