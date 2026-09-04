@@ -37,4 +37,7 @@ Supreme Court cases can be a lot like Wikipedia rabbit holes. I start out with a
 I believe sports are an important part of childhood. Check out this quote:
 > Participation in sports has enabled countless American women and girls to be on a team, to take part in the human drama of athletic competition, to overcome the agony of defeat and know the thrill of victory. And those lessons and experiences in sports have empowered millions of American women who have gone on to thrive in all aspects of American life.
 
-That paragraph is from Justice Brett Kavanaugh himself, from this very majority opinion, *West Virginia v. BPJ*.
+Those wise words are from Justice Brett Kavanaugh himself, from this very majority opinion, *West Virginia v. BPJ*. In his conclusion, Kavanaugh goes on to write:
+> In so ruling, we emphasize one last point. Most of the biological female and transgender student-athletes who are involved in transgender sports disputes around the country are teenagers or in their early twenties. Those student-athletes want to play sports. Their desire to compete warrants respect. No student-athlete on either side of the issue, whether a biological female or transgender, deserves to be ostracized or vilified.
+
+And yet, the state can bar BPJ -- and any trans student-athlete like her -- from sports. Sports could empower her to thrive, but nonetheless she can't participate. She doesn't deserve to be ostracized, yet she's delibrately shut out from a group.
