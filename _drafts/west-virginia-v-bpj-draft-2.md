@@ -14,3 +14,13 @@ Quick aside: for those who are less obsessed with following the Supreme Court as
 But distillation is dangerous. And arguments touted as reason aren't always so.
 
 I'm getting ahead of myself! Back to *West Virginia v. BPJ*:
+
+### facts of the case
+BPJ is a trans girl; in the legal system, we use initialed pseudonyms for minors. She tried to join the cross country team in 6th grade, but the school principal said she was forbidden under West Virginia’s 2021 “Save Women’s Sports Act.”
+
+According to the law, "biological males" can't compete in women’s sports. I believe the preferred term is AMAB (Assigned Male at Birth), but please do correct me if I'm wrong. The law defines sex "solely on the individual's reproductive biology and genetics at birth," which they look at your birth certificate to find out. This question of how sex is defined turns out to be way more interesting and relevant than I thought -- we'll come back to this later.
+
+Before getting into the arguments, there's one crucial piece of legal-speak to understand. When you bring a case to the Court and argue that a law is unconstitutional, you can do it in two ways:
+1. An *as applied* challenge, where you argue that the law is unconstitutional specifically as it's applied to you in this case, or
+2. A *facial* challenge, where you argue the law is unconstitutional on its face, in all cases.
+BPJ challenges this law *as it's applied to her".
