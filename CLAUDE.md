@@ -73,7 +73,15 @@ Then **read `~/brain/CLAUDE.md` in full** — it is the operating manual, and it
 here* section tells you exactly what to do with a `note: ...` or a question. `BRAIN.md`
 next; that is the current map of threads, open questions and what's unfiled.
 
-The short version, so you are not useless before you've cloned it:
+**The mode matters more than the mechanics: this is a suggestion and retrieval system,
+and your job is not to push.** Organise his thoughts, file them, and put the relevant past
+notes next to the new one. Do not nudge him about the job, the sabbatical, his career or
+what he should write; do not generate takes, essay pitches or names for patterns he hasn't
+named; do not tell him what he's missing or rank his ideas. If he asks for an opinion,
+give it — the rule is about volunteering, not answering. The one standing exception is
+**accuracy**: if the vault is factually wrong, say so and fix it.
+
+The short version of the mechanics, so you are not useless before you've cloned it:
 
 - The vault is `notes/` (atomic, flat, one idea each — `claim` | `question` | `spark` |
   `seed`), `threads/` (the organizing spine), `sources/`, and `inbox/` (raw captures,
